@@ -2,146 +2,170 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jack L. Good - Resume</title>
+  <title>Jack L. Good</title>
   <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-  <header>
-    <h1>Jack L. Good</h1>
-    <p>(720) 668-7343 | <a href="mailto:jacklianggood@gmail.com">jacklianggood@gmail.com</a></p>
-    <p>
-      <a href="https://linkedin.com/in/jacklgood" target="_blank">LinkedIn</a> | 
-      <a href="https://github.com/JackLGood" target="_blank">GitHub</a>
-    </p>
+  <!-- Hero/Header Section -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Jack L. Good</h1>
+      <p>Student at Cornell University, Aspiring Software Engineer</p>
+      <div class="social-links">
+        <a href="mailto:jacklianggood@gmail.com">Email</a>
+        <a href="tel:7206687343">(720) 668-7343</a>
+        <a href="https://linkedin.com/in/jacklgood" target="_blank">LinkedIn</a>
+        <a href="https://github.com/JackLGood" target="_blank">GitHub</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <!-- Replace "headshot.jpg" with the exact name of your image file if needed -->
+      <img src="headshot.jpg" alt="Jack L. Good Headshot" />
+    </div>
   </header>
 
+  <!-- Navigation -->
   <nav>
     <ul>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#skills">Technical Skills</a></li>
+      <li><a href="#about">About Me</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
-      <li><a href="#leadership">Leadership</a></li>
-      <li><a href="#personal">Personal</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <main>
-    <section id="education">
-      <h2>Education</h2>
-      <h3>Cornell University, College of Arts and Sciences</h3>
-      <p>Ithaca, NY | Expected May 2026</p>
-      <p>Intended B.A. in Computer Science, Minor in Artificial Intelligence</p>
-      <p>GPA: 3.4/4.0</p>
-    </section>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am currently pursuing a B.A. in Computer Science at Cornell University,
+      with a minor in Artificial Intelligence (GPA: 3.4/4.0). I love
+      building software solutions, exploring new technologies, and collaborating
+      on meaningful projects. Outside of academics, my interests include tennis,
+      golf, skiing, running, fly-fishing, the Denver Nuggets/Broncos, and
+      Country/Norteño/Corrido music.
+    </p>
+  </section>
 
-    <section id="skills">
-      <h2>Technical Skills</h2>
-      <h3>Programming Languages</h3>
-      <p>Python, Java, SQL, OCaml, C#, C++, JavaScript (familiar)</p>
-      <h3>Libraries &amp; Frameworks</h3>
-      <p>NumPy, pandas, JUnit, Java Swing, Matplotlib, Bisect, LangChain, OpenAI, REST APIs</p>
-      <h3>Developer Tools</h3>
-      <p>Git, Tableau, Stata, Agile, Figma, VS Code, Unity, LaTeX, Microsoft Office Suite</p>
-      <h3>Relevant Coursework</h3>
-      <p>Algorithm Analysis, Machine Learning, Database Systems, Computer Vision, Data Structures &amp; Object-Oriented Programming, Compilers &amp; Functional Programming, AI Reasoning &amp; Decision</p>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <article>
-        <h3>Puppet Guide</h3>
-        <p>Developed a robotic guide to enhance museum accessibility for children and individuals with mental disabilities using computer vision and LLMs to provide spoken, personalized, and interactive exhibit dialogues.</p>
-      </article>
-      <article>
-        <h3>JackQL</h3>
-        <p>Created a custom database language for CSV manipulation inspired by SQL and relational algebra. Implemented a lexer/parser using OCamllex/Menhir with programs to perform relational operations on CSV data.</p>
-      </article>
-      <article>
-        <h3>Feature Detection</h3>
-        <p>Implemented Harris corner detection and MOPS descriptors using OpenCV, NumPy, and SciPy for detection, orientation normalization, and feature matching via transformation matrices and ratio tests.</p>
-      </article>
-      <article>
-        <h3>Sports Betting Platform</h3>
-        <p>Developed a platform leveraging functional programming and Snowflake's Data Cloud for best-odds aggregation, optimized betting, and real‑time tools for arbitrage and fair odds.</p>
-      </article>
-      <article>
-        <h3>Interactive Image Selection (Photoshop Magnetic Lasso)</h3>
-        <p>Created an interactive Java GUI that enables users to follow image “edges” by calculating the shortest paths between pixels.</p>
-      </article>
-    </section>
+    <article>
+      <h3>Puppet Guide</h3>
+      <p>
+        Developed a robotic guide to enhance museum accessibility for children
+        and individuals with mental disabilities. Used computer vision and LLMs
+        to provide spoken, personalized, and interactive exhibit dialogues.
+      </p>
+    </article>
 
-    <section id="experience">
-      <h2>Professional Experience</h2>
-      <article>
-        <h3>ATLAS Institute, Boulder, CO</h3>
-        <p><strong>Software Development Intern, Human-Computer Interaction</strong> | May 2024 – Aug 2024</p>
-        <ul>
-          <li>Increased engagement by 38% by training/distilling a smaller LLM for targeted demographics.</li>
-          <li>Created a verbal human-robot interaction AI system with feature detection.</li>
-          <li>Developed a VR user interface in C#/Unity for generating, editing, and saving GenAI 3D models via speech.</li>
-          <li>Authored a low-level design document detailing project requirements, scope, workflow, and architecture.</li>
-        </ul>
-      </article>
-      <article>
-        <h3>Platt Park Capital, Denver, CO</h3>
-        <p><strong>Data Science Intern, Healthcare Investments Group</strong> | May 2023 – Aug 2023</p>
-        <ul>
-          <li>Implemented code to identify underserved regions in behavioral health, reshaping the firm’s investment thesis.</li>
-          <li>Optimized due diligence workflows using SQL/Snowflake, cutting the deal sourcing timeline by one week.</li>
-          <li>Automated client outreach through web scraping, boosting response rates by 12%.</li>
-          <li>Evaluated 23 potential acquisitions using data-driven strategies, advancing two deals beyond the letter of intent stage.</li>
-        </ul>
-      </article>
-      <article>
-        <h3>University of Colorado Boulder, CO</h3>
-        <p><strong>Computational Chemistry Research Aide, Department of Chemistry</strong> | Oct 2021 – Aug 2022</p>
-        <ul>
-          <li>Enhanced data processing speed using Pandas and NumPy, reducing running costs by 11%.</li>
-          <li>Developed over 2000 lines of Python code to visualize matrix outputs of the ‘Generalized Quantum Master Equation’.</li>
-          <li>Delivered two hour-long department-wide presentations on the derivation of the ‘GQME’ to 100+ attendees.</li>
-          <li>Implemented full end-to-end automated testing to ensure simulation result accuracy and data integrity.</li>
-        </ul>
-      </article>
-    </section>
+    <article>
+      <h3>JackQL</h3>
+      <p>
+        Created a custom database language for CSV manipulation, inspired by SQL
+        and relational algebra. Implemented a lexer/parser using OCamllex/Menhir
+        for performing relational operations on CSV data.
+      </p>
+    </article>
 
-    <section id="leadership">
-      <h2>Leadership Experience</h2>
-      <article>
-        <h3>Mutual Investment Club of Cornell, Ithaca, NY</h3>
-        <p><strong>Financial Analyst, Technology Group</strong> | Sep 2023 – Present</p>
-        <ul>
-          <li>Selected as one of eight new members from a competitive pool of over 150 applicants.</li>
-          <li>Pitched two companies, leading to $2000 in investments.</li>
-        </ul>
-      </article>
-      <article>
-        <h3>Delta Upsilon Fraternity, Cornell University Chapter</h3>
-        <p><strong>Recruitment Chair</strong> | Aug 2023 – Present</p>
-        <ul>
-          <li>Tripled new class size by emphasizing holistic relationships with potential members.</li>
-          <li>Managed a $35k budget for 12 recruitment events with over 80 members.</li>
-        </ul>
-      </article>
-      <article>
-        <h3>Phi Chi Theta Professional Business Fraternity, Ithaca, NY</h3>
-        <p><strong>Brotherhood Chair</strong> | Sep 2022 – Present</p>
-        <ul>
-          <li>Organized 10+ brotherhood events on a limited budget and space to foster unity among members.</li>
-          <li>Completed rigorous new member education in finance and consulting skills.</li>
-        </ul>
-      </article>
-    </section>
+    <article>
+      <h3>Feature Detection</h3>
+      <p>
+        Implemented Harris corner detection and MOPS descriptors with OpenCV,
+        NumPy, and SciPy. Performed orientation normalization, feature matching,
+        and transformation matrix calculations.
+      </p>
+    </article>
 
-    <section id="personal">
-      <h2>Personal</h2>
-      <p>Interests: Tennis, golf, skiing, running, fly-fishing, Denver Nuggets/Broncos, &amp; Country/Norteño/Corrido music</p>
-    </section>
-  </main>
+    <article>
+      <h3>Sports Betting Platform</h3>
+      <p>
+        Leveraged functional programming and Snowflake's Data Cloud to create a
+        best-odds aggregation system. Included real-time tools for arbitrage,
+        fair odds calculations, and optimized betting strategies.
+      </p>
+    </article>
 
+    <article>
+      <h3>Interactive Image Selection (Photoshop Magnetic Lasso)</h3>
+      <p>
+        Created a Java GUI that allows users to follow “edges” in an image by
+        calculating the shortest paths between pixels, enabling precise
+        selection.
+      </p>
+    </article>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="experience-item">
+      <h3>ATLAS Institute (Boulder, CO)</h3>
+      <h4>Software Development Intern, Human-Computer Interaction (May 2024 – Aug 2024)</h4>
+      <p>
+        Increased engagement by 38% by training/distilling a smaller LLM for a
+        targeted demographic. Created a verbal human-robot interaction AI system
+        with feature detection, developed a VR user interface in Unity/C#, and
+        authored a design document detailing project scope and architecture.
+      </p>
+    </div>
+
+    <div class="experience-item">
+      <h3>Platt Park Capital (Denver, CO)</h3>
+      <h4>Data Science Intern, Healthcare Investments Group (May 2023 – Aug 2023)</h4>
+      <p>
+        Implemented code to identify underserved regions in behavioral health,
+        reshaping the firm’s investment thesis. Leveraged SQL/Snowflake to
+        optimize due diligence workflows, reducing the deal sourcing timeline by
+        one week. Automated client outreach via web scraping, boosting response
+        rates by 12%.
+      </p>
+    </div>
+
+    <div class="experience-item">
+      <h3>University of Colorado (Boulder, CO)</h3>
+      <h4>Computational Chemistry Research Aide (Oct 2021 – Aug 2022)</h4>
+      <p>
+        Utilized Pandas and NumPy to enhance data processing speed and lower
+        running costs by 11%. Wrote 2000+ lines of Python to visualize matrix
+        outputs of the “Generalized Quantum Master Equation.” Deployed
+        end-to-end automated testing to ensure simulation accuracy.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out for any opportunities or collaborations!</p>
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:jacklianggood@gmail.com">jacklianggood@gmail.com</a>
+    </p>
+    <p>
+      <strong>Phone:</strong>
+      <a href="tel:7206687343">(720) 668-7343</a>
+    </p>
+    <p>
+      <strong>LinkedIn:</strong>
+      <a href="https://linkedin.com/in/jacklgood" target="_blank">
+        linkedin.com/in/jacklgood
+      </a>
+    </p>
+    <p>
+      <strong>GitHub:</strong>
+      <a href="https://github.com/JackLGood" target="_blank">
+        github.com/JackLGood
+      </a>
+    </p>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Jack L. Good. All rights reserved.</p>
+    <p>&copy; 2025 Jack L. Good</p>
   </footer>
 </body>
 </html>
