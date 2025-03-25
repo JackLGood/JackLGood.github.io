@@ -1,41 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your GitHub Page</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Personal Page</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Welcome to My GitHub Page</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section id="home">
-    <h2>Home</h2>
-    <p>This is the homepage of your GitHub Page website. Customize it as you like!</p>
-  </section>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">Jack Good</div>
+    <ul>
+      <li><a href="#bio">Bio</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#experiences">Experiences</a></li>
+      <li><a href="#personal">Personal</a></li>
+    </ul>
+  </nav>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>Use this section to tell your visitors about yourself or your project.</p>
-  </section>
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <!-- Replace 'profile.jpg' with your own image file -->
+      <img src="profile.jpg" alt="Profile Photo" class="profile-pic"/>
+      <div class="hero-text">
+        <h1>Žiga Kovačič</h1>
+        <h2>Undergraduate Student<br/>Cornell University</h2>
+        <p>
+          <a href="mailto:your-email@example.com">Email</a> |
+          <a href="https://github.com/your-profile">GitHub</a>
+        </p>
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Get in touch at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
-  </section>
+    <!-- About Me Section -->
+    <section class="about" id="bio">
+      <h2>About Me</h2>
+      <p>
+        I am a junior studying Mathematics and Computer Science through the College Scholars program at Cornell University, where I'm fortunate to be advised by Abe Davis. I'm doing research at the intersection of graphics and machine learning, focusing on physical simulations and new ways of representing real-world objects in digital form.
+      </p>
+      <p>
+        In my spare time, I love exploring the outdoors, reading sci-fi novels, and writing short stories on computational physics. Check out the rest of this site for my publications, experiences, and personal projects.
+      </p>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
-  </footer>
+    <!-- Publications Section (Placeholder) -->
+    <section class="placeholder" id="publications">
+      <h2>Publications</h2>
+      <p>Coming soon...</p>
+    </section>
+
+    <!-- Experiences Section (Placeholder) -->
+    <section class="placeholder" id="experiences">
+      <h2>Experiences</h2>
+      <p>Coming soon...</p>
+    </section>
+
+    <!-- Personal Section (Placeholder) -->
+    <section class="placeholder" id="personal">
+      <h2>Personal</h2>
+      <p>Coming soon...</p>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
