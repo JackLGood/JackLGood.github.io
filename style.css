@@ -1,48 +1,67 @@
-/* Basic styling for the GitHub Page website */
-
+/* Basic reset and typography */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
-  color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
 }
 
-header {
-  background-color: #343a40;
-  color: #fff;
+/* Container styling */
+header, nav, main, footer {
+  max-width: 800px;
+  margin: auto;
   padding: 1rem;
-  text-align: center;
 }
 
+/* Header styling */
+header {
+  text-align: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid #000;
+}
+
+/* Navigation styling */
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  border-bottom: 1px solid #000;
+  margin-bottom: 1rem;
 }
 
 nav ul li a {
-  color: #fff;
   text-decoration: none;
+  color: #000;
 }
 
+/* Section spacing */
 section {
-  padding: 2rem;
-  margin: 1rem;
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
 }
 
+h1, h2, h3 {
+  margin: 0.5rem 0;
+}
+
+/* Lists */
+ul {
+  padding-left: 1.5rem;
+}
+
+/* Footer styling */
 footer {
-  background-color: #343a40;
-  color: #fff;
   text-align: center;
-  padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #000;
+  padding: 1rem 0;
   margin-top: 2rem;
+}
+
+/* Link styling */
+a {
+  color: #000;
 }
