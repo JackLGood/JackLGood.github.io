@@ -15,7 +15,7 @@ body {
 
 /* Header and Navigation */
 header {
-  background-color: #d3d3d3; /* light grey background */
+  background-color: #d3d3d3 !important;  /* light grey background */
   padding: 10px 0;
   margin-bottom: 20px;
 }
@@ -31,7 +31,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #000; /* dark text */
+  color: #000;  /* dark text */
   text-decoration: none;
   font-weight: bold;
 }
@@ -89,9 +89,11 @@ nav ul li a:hover {
 .video-container {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 ratio */
-  padding-top: 25px;
   height: 0;
   margin-top: 15px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .video-container iframe {
