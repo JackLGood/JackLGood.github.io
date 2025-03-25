@@ -63,23 +63,26 @@ nav ul li a:hover {
   margin-top: 20px;
 }
 
-/* About Section */
-.about-container {
+/* About Me Section: Centered header with headshot */
+.about-header {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
-.headshot {
+.about-header .headshot {
   width: 150px;
   height: 150px;
-  object-fit: cover;
   border-radius: 50%;
+  object-fit: cover;
   margin-right: 20px;
 }
 
-.about-text {
-  flex: 1;
+.about-details {
+  max-width: 500px;
 }
 
 /* Footer */
