@@ -74,8 +74,8 @@ nav ul li a:hover {
 }
 
 .about-header .headshot {
-  width: 250px;
-  height: 250px;
+  width: 210px;
+  height: 210px;
   border-radius: 50%;
   object-fit: cover;
   margin-right: 20px;
