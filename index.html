@@ -2,61 +2,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Jack Good – Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jack L. Good – Portfolio</title>
 
   <!-- Inter system font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- Navigation Bar -->
   <header>
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Current Projects</a></li>
+        <li><a href="#experiences">Experiences</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- About Me Section -->
   <section id="about" class="section about-header">
-    <img src="headshot.jpg" alt="Jack Good" class="headshot">
+    <img src="headshot.jpg" alt="Jack L. Good Headshot" class="headshot">
     <div class="about-details">
-      <h1>Jack Good</h1>
-      <h2>Student</h2>
-      <p>Brief intro about what you do and what you’re passionate about. Keep it to one or two sentences.</p>
+      <h1>Jack L. Good</h1>
+      <h2>Student at Cornell University</h2>
+      <p>
+        <a href="mailto:jacklianggood@gmail.com">jacklianggood@gmail.com</a> | (720) 668-7343 | 
+        <a href="https://www.linkedin.com/in/jacklgood/" target="_blank">LinkedIn</a> | 
+        <a href="https://github.com/JackLGood" target="_blank">GitHub</a>
+      </p>
     </div>
   </section>
 
+  <!-- Current Projects Section -->
   <section id="projects" class="section">
-    <h2>Projects</h2>
-    <ul class="projects-list">
-      <li>
-        <h3><a href="https://github.com/JackLGood/RealTimeFacialEmotionForUnity">RealTimeFacialEmotionForUnity</a></h3>
-        <p>Short description of project one.</p>
-      </li>
-      <li>
-        <h3><a href="https://github.com/yourrepo2">Project Two</a></h3>
-        <p>Short description of project two.</p>
-      </li>
-      <!-- add more as needed -->
-    </ul>
+    <h2>Current Projects</h2>
+    <div class="section-content">
+      <h3>Real-Time Face Recognition and Probability Prediction System</h3>
+      <p>
+        I live in a fraternity and one of the rooms sees constant “hanging out” and I noticed not only do some people come by much more than others, but the times they arrive and leave are significant. Fraternity guys are lazy, so wouldn’t it be nice to predict when people come to hang out in a minimally invasive way? I’m developing a real-time facial recognition system that identifies individuals as they enter and calculates the probability of their appearance based on historical data. Built with <strong>DeepFace</strong> and <strong>OpenCV</strong>, it processes live feeds, matches faces to a known database, and logs entry events. The system learns temporal patterns to predict attendance, designed to run locally or on a <strong>Raspberry Pi</strong> for smart‐environment automation.
+      </p>
+      <h3>Check out my latest project video:</h3>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/1uBEn5UpDWI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
   </section>
 
+  <!-- Experiences Section -->
+  <section id="experiences" class="section">
+    <h2>Experiences</h2>
+    <div class="section-content">
+      <h3>Education</h3>
+      <ul>
+        <li><strong>Cornell University</strong> – College of Arts & Sciences & Bowers College of Computing</li>
+        <li><strong>Relevant Coursework:</strong> CS 4820, CS 4670, CS 4320, AEM 3275, ECON 3801, ECON 3130, CS 3110, CS 2800, CS 2110</li>
+      </ul>
+
+      <h3>Technical Skills</h3>
+      <ul>
+        <li><strong>Languages:</strong> Python, Java, SQL, OCaml, C#, C++, JavaScript</li>
+        <li><strong>Frameworks/Libs:</strong> NumPy, pandas, OpenCV, DeepFace, LangChain, OpenAI, REST APIs</li>
+        <li><strong>Tools:</strong> Git, Tableau, Stata, Figma, VS Code, Unity, LaTeX</li>
+      </ul>
+
+      <h3>Professional Experience</h3>
+      <h4>Cornell Tech – Incoming Undergraduate Researcher (Jun 2025 – Aug 2025)</h4>
+      <h4>ATLAS Institute – Software Dev Intern (May 2024 – Aug 2024)</h4>
+      <ul>
+        <li>↑38% engagement by distilling a smaller LLM for target audiences</li>
+        <li>Built verbal HCI AI system with <2% hallucination rate</li>
+        <li>Created VR interface in Unity for GenAI 3D-model workflow</li>
+      </ul>
+
+      <h4>Platt Park Capital – Data Science Intern (May 2023 – Aug 2023)</h4>
+      <ul>
+        <li>Identified underserved behavioral‐health regions via SQL/Snowflake</li>
+        <li>Cut deal sourcing time by one week through workflow automation</li>
+        <li>Boosted outreach response +12% via automated web scraping</li>
+      </ul>
+
+      <h4>Univ. of Colorado – Computational Chemistry Aide (Oct 2021 – Aug 2022)</h4>
+      <ul>
+        <li>Accelerated data processing, cutting compute costs by 11%</li>
+        <li>Authored 2k+ lines of Python for GQME matrix visualizations</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
   <section id="contact" class="section">
     <h2>Contact</h2>
-    <ul class="contact-list">
-      <li><a href="mailto:jacklianggood@gmail.com" aria-label="Email"><svg><!-- mail icon --></svg></a></li>
-      <li><a href="https://linkedin.com/in/jacklgood/" target="_blank" aria-label="LinkedIn"><svg><!-- LinkedIn icon --></svg></a></li>
-      <li><a href="https://github.com/JackLGood" target="_blank" aria-label="GitHub"><svg><!-- GitHub icon --></svg></a></li>
-    </ul>
+    <div class="section-content">
+      <p><strong>Email:</strong> <a href="mailto:jacklianggood@gmail.com">jacklianggood@gmail.com</a></p>
+      <p><strong>Phone:</strong> (720) 668-7343</p>
+      <p><strong>Interests:</strong> Tennis, golf, skiing, running, fly-fishing, Nuggets/Broncos, country music</p>
+    </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Jack Good</p>
+    <p>© 2025 Jack L. Good</p>
   </footer>
 
   <script src="script.js"></script>
