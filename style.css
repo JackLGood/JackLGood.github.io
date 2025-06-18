@@ -95,10 +95,10 @@ nav a:hover {
   text-align: center;
 }
 .headshot {
-  width: 460px;
-  height: 460px;
+  width: 760px;
+  height: 760px;
   border: 1px solid var(--color-accent);
-  border-radius: 50%;
+  border-radius: 30%;
   object-fit: cover;
   margin-bottom: var(--spacing);
 }
