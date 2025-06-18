@@ -1,6 +1,15 @@
 // script.js
-// Minimal JS — scroll-behavior is handled by CSS
+// Add scroll listener to toggle white navbar background
 document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector("header");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 0) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+
   // Track external link clicks (example)
   document.querySelectorAll('a[target="_blank"]').forEach(link => {
     link.addEventListener("click", () => {
