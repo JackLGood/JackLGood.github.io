@@ -7,6 +7,7 @@
   --spacing: 1.5rem;
 }
 
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -68,6 +69,19 @@ nav a:hover {
   color: var(--color-accent);
 }
 
+/* Section Content Spacing */
+.section-content {
+  margin-top: var(--spacing);
+}
+.section-content p,
+.section-content ul {
+  margin-bottom: var(--spacing);
+}
+.section-content ul {
+  list-style: disc inside;
+  margin-left: 1rem;
+}
+
 /* About Hero */
 .about-header {
   display: flex;
@@ -93,38 +107,29 @@ nav a:hover {
   color: #555;
 }
 
-/* Projects */
-.projects-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--spacing);
+/* Video Embed */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-top: var(--spacing);
 }
-.projects-list h3 {
-  margin-bottom: 0.25rem;
-}
-.projects-list a {
-  color: var(--color-accent);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color .2s;
-}
-.projects-list a:hover {
-  border-color: var(--color-accent);
+.video-container iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
 }
 
-/* Contact */
+/* Contact Icons */
 .contact-list {
   display: flex;
   justify-content: center;
   gap: var(--spacing);
   list-style: none;
-  margin-top: var(--spacing);
 }
 .contact-list a {
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 32px; height: 32px;
   transition: transform .2s, opacity .2s;
 }
 .contact-list a:hover {
