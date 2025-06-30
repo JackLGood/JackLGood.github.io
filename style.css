@@ -155,14 +155,16 @@ footer {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--spacing);
+  gap: 2rem;            /* adjust as you like */
+  margin-top: 1.5rem;
 }
 
 .project-card {
   display: block;
-  border: 1px solid #e0e0e0;
+  background: #fff;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  padding: var(--spacing);
+  padding: 1rem;
   text-decoration: none;
   color: inherit;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -170,21 +172,20 @@ footer {
 
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .project-card h3 {
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
-  color: var(--color-accent);
 }
 
 .project-card p {
   font-size: 1rem;
-  color: #555;
+  line-height: 1.4;
 }
 
-/* Responsive: single column on narrow screens */
+/* Responsive: stack to one column at narrow widths */
 @media (max-width: 600px) {
   .projects-grid {
     grid-template-columns: 1fr;
