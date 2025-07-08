@@ -188,12 +188,10 @@ footer {
 }
 
 .project-card ul {
-  /* create space before the bullet */
   padding-left: 1rem;    /* indents the bullets */
-  margin-left: 0;        /* reset any default margin if needed */
+  margin-left: 2rem;        /* reset any default margin if needed */
 }
 
-/* if you prefer a bit more space, bump it up: */
 .project-card ul {
   padding-left: 1.5rem;
 }
