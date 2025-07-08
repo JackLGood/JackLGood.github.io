@@ -188,8 +188,8 @@ footer {
 }
 
 .project-card ul {
-  padding-left: 1rem;    /* indents the bullets */
-  margin-left: 2rem;        /* reset any default margin if needed */
+  padding-left: 2rem;    /* indents the bullets */
+  margin-left: 0;        /* reset any default margin if needed */
 }
 
 .project-card ul {
