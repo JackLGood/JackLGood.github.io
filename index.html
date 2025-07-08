@@ -49,8 +49,13 @@
       </a>
       <a href="https://github.com/JackLGood/RealTimeFacialEmotionForUnity" class="project-card">
         <div class="card-content">
-          <h3>Emotion Recognition in Unity</h3>
-          <p>Unity program delivering real-time facial-emotion recognition: webcam frames are face-aligned via OpenCV landmarks, preprocessed to handle rotation/scale, then passed to a deep convolution neural networks trained on the FER+ dataset, and deployed through Unity’s Barracuda inference engine to accurately classify each face into one of eight emotions.</p>
+          <h3>DCNN Emotion Recognition in Unity</h3>
+          <ul>
+            <li><strong>Real-time 8-class emotion inference</strong> via webcam frames fed into a FER+ DCNN using Unity’s Barracuda engine, classifying neutral, happiness, surprise, sadness, anger, disgust, fear, and contempt at interactive frame rates.</li>
+            <li><strong>Precision face alignment</strong> with OpenCV’s 68-point landmarks (eyes, nose, mouth, chin), rotating/scaling each frame to match FER+’s 64×64 grayscale input.</li>
+            <li><strong>Developer-friendly controls & debug UI</strong> including Inspector sliders for zoom, padding, smoothing, and a live preview of the exact crop sent to the network.</li>
+            <li><strong>Tags:</strong> computer vision, deep convolution neural networks, Unity, OpenCV (C#)</li>
+          </ul>
         </div>
       </a>
       <a href="#" class="project-card">
