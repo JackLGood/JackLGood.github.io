@@ -153,13 +153,14 @@ footer {
 
 /* ─── Projects Grid ───────────────────────────────────── */
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;            /* adjust as you like */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;            
   margin-top: 1.5rem;
 }
 
 .project-card {
+  flex: 0 0 400px;      /* each card is exactly 400px wide */
   display: block;
   background: #fff;
   border: 1px solid #ddd;
