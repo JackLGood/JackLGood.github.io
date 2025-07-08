@@ -61,7 +61,7 @@ nav a:hover {
 /* Sections */
 .section {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1000px;
   padding: calc(var(--spacing) * 2) var(--spacing);
 }
 .section + .section {
