@@ -121,8 +121,10 @@ nav a:hover {
 }
 .video-container iframe {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Contact Icons */
@@ -134,7 +136,8 @@ nav a:hover {
 }
 .contact-list a {
   display: inline-block;
-  width: 32px; height: 32px;
+  width: 32px;
+  height: 32px;
   transition: transform .2s, opacity .2s;
 }
 .contact-list a:hover {
@@ -153,16 +156,14 @@ footer {
 
 /* ─── Projects Grid ───────────────────────────────────── */
 .projects-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;            
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
   margin-top: 1.5rem;
 }
 
 .project-card {
-  /* set an explicit width for each card */
-  width: 500px;
-  display: block;
+  width: 100%;               /* fill its grid cell */
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -188,16 +189,8 @@ footer {
 }
 
 .project-card ul {
-  padding-left: 2rem;    /* indents the bullets */
-  margin-left: 0;        /* reset any default margin if needed */
-}
-
-.project-card ul {
-  padding-left: 1.5rem;
-}
-
-.card-content ul {
-  padding-left: 1.25rem;
+  padding-left: 1.5rem;      /* indent bullets */
+  margin: 0;                 /* reset default list margins */
 }
 
 /* Responsive: stack to one column at narrow widths */
