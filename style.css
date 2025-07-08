@@ -160,7 +160,8 @@ footer {
 }
 
 .project-card {
-  flex: 0 0 400px;      /* each card is exactly 400px wide */
+  /* set an explicit width for each card */
+  width: 400px;
   display: block;
   background: #fff;
   border: 1px solid #ddd;
