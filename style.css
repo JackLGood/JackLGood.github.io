@@ -161,7 +161,7 @@ footer {
 
 .project-card {
   /* set an explicit width for each card */
-  width: 400px;
+  width: 500px;
   display: block;
   background: #fff;
   border: 1px solid #ddd;
