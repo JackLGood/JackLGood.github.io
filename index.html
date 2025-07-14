@@ -45,8 +45,8 @@
         <div class="card-content">
           <h3>Revenue-Optimizing Auto-Loan Pricing Engine with Random-Forest Uplift Modeling</h3>
           <ul>
-            <li><strong>Built an end-to-end pricing-optimization pipeline for an online auto-lender:</strong>strong> cleaned 40 k+ loan records, explored acceptance-vs-APR trade-offs, and used a logistic baseline to quantify current revenue; then iteratively optimized each customer’s rate, demonstrating a portfolio-wide uplift of ≈ $84 k in expected revenue for the test cohort.</li>
-            <li><strong>Bench-marked multiple ML models and surfaced actionable insights:</strong>strong> engineered features (APR, FICO, competition rate, cost of funds, partner channel), tuned SVM, Random-Forest, K-NN, and a small feed-forward ANN via cross-validated grids, selected Random-Forest (AUC ≈ 0.89; test accuracy ≈ 0.88), and visualized feature importance to show rate & loan amount drive >70 % of acceptance variance.</li>
+            <li><strong>Built an end-to-end pricing-optimization pipeline for an online auto-lender:</strong> cleaned 40 k+ loan records, explored acceptance-vs-APR trade-offs, and used a logistic baseline to quantify current revenue; then iteratively optimized each customer’s rate, demonstrating a portfolio-wide uplift of ≈ $84 k in expected revenue for the test cohort.</li>
+            <li><strong>Bench-marked multiple ML models and surfaced actionable insights:</strong> engineered features (APR, FICO, competition rate, cost of funds, partner channel), tuned SVM, Random-Forest, K-NN, and a small feed-forward ANN via cross-validated grids, selected Random-Forest (AUC ≈ 0.89; test accuracy ≈ 0.88), and visualized feature importance to show rate & loan amount drive >70 % of acceptance variance.</li>
             <li><strong>Stack:</strong> Python, pandas, scikit-learn, TensorFlow/Keras, seaborn, matplotlib.</li>
           </ul>
         </div>
@@ -111,7 +111,7 @@
             </li>
             <li><strong>Class-imbalance strategy:</strong> used ROC-AUC as primary metric (only 11 % positives) plus confusion-matrix to monitor false-negatives vs outbound-call cost.</li>
             <li><strong>Impact:</strong> XGBoost model lifts AUC by +2 pp over Random Forest baseline and cuts false-positive rate by 10 %, delivering a cleaner, more profitable lead list to marketing ops.</li>
-            <li><strong>Stack:</strong> Python 3.11, scikit-learn, XGBoost, pandas, NumPy, seaborn.</li>
+            <li><strong>Stack:</strong> Python, scikit-learn, XGBoost, pandas, NumPy, seaborn.</li>
           </ul>
         </div>
       </a>
@@ -129,7 +129,7 @@
 
       <a href="#" class="project-card">
         <div class="card-content">
-          <h3>High-Accuracy Crop Recommendation Engine with k-NN & Soil-Climate Profiling</h3>
+          <h3>High-Accuracy Crop Recommendation Engine with K-NN & Soil-Climate Profiling</h3>
           <ul>
             <li><strong>Built a precision-ag pipeline from raw agronomic data to deployable recommender:</strong> merged rainfall, nutrient, and climate tables into 2 k+ farm records, visualized N-P-K vs. humidity/temperature, then tuned a k-NN classifier (k = 3) via 5-fold CV to hit 97 % test accuracy on 22 crop classes.</li>
             <li><strong>Drove explainable, per-farm decisions for growers:</strong> standardized features to optimize Euclidean distance, generated similarity diagnostics (e.g., maize vs. peas soil demands), and delivered instant “what-if” predictions—recommending rice for sample N20 P40 K55/26 °C/7.2 pH scenarios.</li>
@@ -166,7 +166,7 @@
           <ul>
             <li><strong>Engineered and trained a lean feed-forward network on 60 k gray-scale fashion images:</strong> flattened 28×28 inputs, used a single 300-ReLU hidden layer, tuned epochs via learning-curve inspection (≃ 12) to hit 85 % train / 82 % test accuracy — matching Random Forest performance while cutting inference latency to milliseconds.</li>
             <li><strong>Bench-marked against five classic ML baselines (LogReg, DT, RF, KNN, XGBoost):</strong> measured wall-time vs. accuracy/AUC, showing the ANN delivers comparable accuracy to XGBoost (0.825 vs 0.894) but trains ≈ 3× faster than heavy tree ensembles on CPU; visualized mis-classified samples to guide future CNN upgrades.</li>
-            <li><strong>Stack:</strong> Python, TensorFlow/Keras, NumPy / pandas, scikit-learn, matplotlib.</li>
+            <li><strong>Stack:</strong> Python, TensorFlow/Keras, NumPy, pandas, scikit-learn, matplotlib.</li>
           </ul>
         </div>
       </a>
