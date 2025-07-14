@@ -218,3 +218,13 @@ footer {
 .show-more-btn:hover {
   background: #1a2730; /* slightly darker accent */
 }
+
+/* hide every project-card after the 4th */
+.projects-grid .project-card:nth-child(n+5) {
+  display: none;
+}
+
+/* when .show-all is added, un-hide them */
+.projects-grid.show-all .project-card {
+  display: block;
+}
