@@ -19,20 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const projects    = document.querySelectorAll('.projects-grid .project-card');
-  const showMoreBtn = document.getElementById('show-more-btn');
-  const initialCount = 4;
+  const grid = document.querySelector('.projects-grid');
+  const btn  = document.getElementById('show-more-btn');
 
-  // 1) hide everything after the first 4
-  projects.forEach((card, idx) => {
-    if (idx >= initialCount) card.style.display = 'none';
-  });
-
-  // 2) on click, reveal the hidden cards and hide the button
-  showMoreBtn.addEventListener('click', () => {
-    projects.forEach((card, idx) => {
-      if (idx >= initialCount) card.style.display = 'block';
-    });
-    showMoreBtn.style.display = 'none';
+  btn.addEventListener('click', () => {
+    grid.classList.add('show-all');
+    btn.style.display = 'none';
   });
 });
