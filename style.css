@@ -229,11 +229,12 @@ footer {
   display: block;
 }
 
-.projects-grid .project-card .card-content img {
-  display: block;           /* make margin auto work */
-  margin: 1rem auto;        /* center horizontally, space top/bottom */
-  width: 50%;               /* half the card’s width */
-  aspect-ratio: 4 / 3;      /* lock to 4:3 */
-  object-fit: cover;        /* crop/scale to fill */
-  border-radius: 4px;       /* match your card corners */
+/* ─── uniform 4:3 thumbnails at half-width ───────────────── */
+.card-visual {
+  display: block;           /* allow auto margins to center */
+  margin: 1rem auto;        /* center horizontally, gap above/below */
+  width: 50%;               /* half the width of the card */
+  aspect-ratio: 4 / 3;      /* lock it to a 4:3 frame */
+  object-fit: cover;        /* crop&scale to fill without distortion */
+  border-radius: 4px;       /* match your card corner radius */
 }
