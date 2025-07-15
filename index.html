@@ -55,7 +55,7 @@
       <a href="https://github.com/JackLGood/RealTimeFacialEmotionForUnity" class="project-card">
         <div class="card-content">
           <h3>Real-Time Emotion Recognition in Unity Using Deep Convolutional Neural Networks</h3>
-          <img src="FEREMotion.gif" alt="FER Unity" class="card-visual">
+          <img src="FerDemo.gif" alt="FER Unity" class="card-visual">
           <ul>
             <li><strong>Real-time 8-class emotion inference:</strong> via webcam frames fed into a FER+ DCNN using Unity’s Barracuda engine, classifying neutral, happiness, surprise, sadness, anger, disgust, fear, and contempt at interactive frame rates.</li>
             <li><strong>Precision face alignment:</strong> with OpenCV’s 68-point landmarks (eyes, nose, mouth, chin), rotating/scaling each frame to match FER+’s 64×64 grayscale input.</li>
@@ -103,19 +103,9 @@
         <div class="card-content">
           <h3>Term-Deposit Propensity Model — Ensemble Learning on Portuguese Bank Data</h3>
           <ul>
-            <li><strong>Business objective:</strong> predict which retail-bank clients (<em>n ≈ 20 k</em>) will subscribe to a term deposit, enabling targeted call-center campaigns and saving ≈ 89 % wasted dials.</li>
-            <li><strong>Feature engineering / ETL:</strong> 16 raw columns → numeric pipeline (mean imputation) + categorical pipeline (most-frequent imputation &amp; one-hot, 50+ dummies) in a <code>ColumnTransformer</code>; 100 % reproducible with <code>random_state = 0</code>.</li>
-            <li><strong>Model selection:</strong>
-              <ul>
-                <li>Baselines: depth-tuned CART (AUC ≈ 0.925)</li>
-                <li><strong>Random Forest (400 trees)</strong>: CV-AUC 0.941, 35 k features/sec scoring speed</li>
-                <li><strong>AdaBoost (10× depth-5 stumps)</strong>: CV-AUC 0.936</li>
-                <li><strong>XGBoost (50 trees, binary-logistic)</strong>: **best** CV-AUC 0.945 • validation AUC 0.946 • test AUC 0.930</li>
-              </ul>
-            </li>
-            <li><strong>Class-imbalance strategy:</strong> used ROC-AUC as primary metric (only 11 % positives) plus confusion-matrix to monitor false-negatives vs outbound-call cost.</li>
-            <li><strong>Impact:</strong> XGBoost model lifts AUC by +2 pp over Random Forest baseline and cuts false-positive rate by 10 %, delivering a cleaner, more profitable lead list to marketing ops.</li>
-            <li><strong>Stack:</strong> Python, scikit-learn, XGBoost, pandas, NumPy, seaborn.</li>
+            <li><strong>Business impact & pipeline:</strong>  Built a production-style lead-scoring engine for a Portuguese bank—cleaned/encoded 16 raw fields into 50 + one-hot features with a ColumnTransformer, then generated fully reproducible splits to rank 20 k clients and cut ~90 % of wasted call-center outreach.</li>
+            <li><strong>Ensemble approach (CART → Random Forest → XGBoost):</strong>  Baseline CART → tuned Random Forest (AUC 0.942) → XGBoost (50 trees) topping ROC-AUC 0.946 on hold-out and slashing false-positive rate by 10 %, shipping a higher-yield call list to marketing ops.</li>
+            <li><strong>Stack:</strong> Python, XGBoost, pandas, NumPy, scikit-learn, seaborn.</li>
           </ul>
         </div>
       </a>
