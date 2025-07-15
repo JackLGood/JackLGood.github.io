@@ -229,11 +229,11 @@ footer {
   display: block;
 }
 
-.project-card img {
-  display: block;
-  margin: 1rem auto;
-  width: 50%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: 4px;
+.projects-grid .project-card .card-content img {
+  display: block;           /* make margin auto work */
+  margin: 1rem auto;        /* center horizontally, space top/bottom */
+  width: 50%;               /* half the card’s width */
+  aspect-ratio: 4 / 3;      /* lock to 4:3 */
+  object-fit: cover;        /* crop/scale to fill */
+  border-radius: 4px;       /* match your card corners */
 }
