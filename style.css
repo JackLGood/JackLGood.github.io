@@ -3,7 +3,7 @@
   --color-bg: #fff;
   --color-text: #111;
   --color-accent: #2C3E50;
-  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-sans: "Courier New", Courier, monospace;
   --spacing: 1.5rem;
 }
 
