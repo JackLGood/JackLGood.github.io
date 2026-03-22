@@ -1,241 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jack L. Good – Portfolio</title>
 
-  <!-- Inter system font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jack Good | Editorial Precision</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Manrope & Inter -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed-variant": "#486272",
+              "error": "#9f403d",
+              "error-dim": "#4e0309",
+              "on-tertiary-fixed": "#2c4655",
+              "on-secondary-container": "#505252",
+              "on-error-container": "#752121",
+              "primary-container": "#c5eae9",
+              "on-background": "#323232",
+              "tertiary-fixed-dim": "#c2def0",
+              "on-secondary-fixed": "#3e4040",
+              "surface-tint": "#426464",
+              "on-tertiary-container": "#3e5868",
+              "on-surface": "#323232",
+              "on-primary-fixed-variant": "#3f6161",
+              "on-primary": "#dafffe",
+              "primary-fixed": "#c5eae9",
+              "secondary": "#5d5f5f",
+              "surface-container-lowest": "#ffffff",
+              "inverse-surface": "#0e0e0e",
+              "surface-variant": "#e4e2e2",
+              "secondary-fixed": "#e2e2e2",
+              "on-primary-container": "#355757",
+              "on-secondary": "#f9f9f8",
+              "surface": "#fcf9f8",
+              "on-secondary-fixed-variant": "#5a5c5c",
+              "secondary-container": "#e2e2e2",
+              "on-tertiary": "#f4faff",
+              "outline": "#7b7a7a",
+              "on-error": "#fff7f6",
+              "tertiary-container": "#d0ecff",
+              "secondary-dim": "#515353",
+              "surface-dim": "#dbdad9",
+              "tertiary": "#486272",
+              "surface-container": "#f0eded",
+              "surface-container-high": "#eae8e7",
+              "background": "#fcf9f8",
+              "on-primary-fixed": "#224545",
+              "primary": "#426464",
+              "inverse-on-surface": "#9e9c9c",
+              "surface-bright": "#fcf9f8",
+              "inverse-primary": "#d8fefd",
+              "outline-variant": "#b3b2b1",
+              "surface-container-low": "#f6f3f2",
+              "primary-dim": "#365858",
+              "on-surface-variant": "#5f5f5f",
+              "secondary-fixed-dim": "#d4d4d4",
+              "surface-container-highest": "#e4e2e2",
+              "error-container": "#fe8983",
+              "tertiary-fixed": "#d0ecff",
+              "tertiary-dim": "#3c5666",
+              "primary-fixed-dim": "#b7dbdb"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #fcf9f8;
+            color: #323232;
+        }
+    </style>
 </head>
-<body>
-
-  <!-- Navigation Bar -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experiences">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- About Me Section -->
-  <section id="about" class="section about-header">
-    <img src="headshot.jpg" alt="Jack L. Good Headshot" class="headshot">
-    <div class="about-details">
-      <h1>Jack L. Good</h1>
-      <h2>Computer Science Student @ Cornell University. In my free time I enjoy playing tennis, fly fishing, watching the Broncos play, and listening to country/Sierreño music. Always interested in contributing to projects that improve accesibilty.</h2>
-      <p>
-        <a href="https://www.linkedin.com/in/jacklgood/" target="_blank">LinkedIn</a> | 
-        <a href="https://github.com/JackLGood" target="_blank">GitHub</a> | (720) 668-7343
-      </p>
-      <p>Please direct all complaints to: <a href="mailto:jacklianggood@gmail.com">jacklianggood@gmail.com</a></p>
-    </div>
-  </section>
-
-  <!-- Current Projects Section -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <a href="#" class="project-card">
-        <div class="card-content">
-          <h3>Revenue-Optimizing Auto-Loan Pricing Engine with Random-Forest Uplift Modeling</h3>
-          <img src="MiniProjVisual.png" alt="MP Picture" class="card-visual">
-          <ul>
-            <li><strong>Built an end-to-end pricing-optimization pipeline for an online auto-lender:</strong> cleaned 40 k+ loan records, explored acceptance-vs-APR trade-offs, and used a logistic baseline to quantify current revenue; then iteratively optimized each customer’s rate, demonstrating a portfolio-wide uplift of ≈ $84 k in expected revenue for the test cohort.</li>
-            <li><strong>Bench-marked multiple ML models and surfaced actionable insights:</strong> engineered features (APR, FICO, competition rate, cost of funds, partner channel), tuned SVM, Random-Forest, K-NN, and a small feed-forward ANN via cross-validated grids, selected Random-Forest (AUC ≈ 0.89; test accuracy ≈ 0.88), and visualized feature importance to show rate & loan amount drive >70 % of acceptance variance.</li>
-            <li><strong>Stack:</strong> Python, pandas, scikit-learn, TensorFlow/Keras, seaborn, matplotlib.</li>
-          </ul>
-        </div>
-      </a>
-      <a href="https://github.com/JackLGood/RealTimeFacialEmotionForUnity" class="project-card">
-        <div class="card-content">
-          <h3>Real-Time Emotion Recognition in Unity Using Deep Convolutional Neural Networks</h3>
-          <img src="FerDemo.gif" alt="FER Unity" class="card-visual">
-          <ul>
-            <li><strong>Real-time 8-class emotion inference:</strong> via webcam frames fed into a FER+ DCNN using Unity’s Barracuda engine, classifying neutral, happiness, surprise, sadness, anger, disgust, fear, and contempt at interactive frame rates.</li>
-            <li><strong>Precision face alignment:</strong> with OpenCV’s 68-point landmarks (eyes, nose, mouth, chin), rotating/scaling each frame to match FER+’s 64×64 grayscale input.</li>
-            <li><strong>Developer-friendly controls & debug UI:</strong> including Inspector sliders for zoom, padding, smoothing, and a live preview of the exact crop sent to the network.</li>
-            <li><strong>Tags:</strong> computer vision, deep convolution neural networks, Unity, OpenCV (C#)</li>
-          </ul>
-        </div>
-      </a>
-      <a href="#" class="project-card">
-        <div class="card-content">
-          <h3>NLP-Driven Product Clustering Uncovers Customer Spend Patterns</h3>
-          <img src="NLPVisual.png" alt="NLP Picture" class="card-visual">
-          <ul>
-            <li><strong>Turned 500 K+ retail descriptions into a 200-term feature matrix:</strong> tokenized text, filtered nouns with NLTK POS-tagging, applied stemming, and one-hot-encoded price buckets to create a sparse SKU-feature table for downstream clustering.</li>
-            <li><strong>Revealed five high-value product segments with K-Means + word-clouds:</strong> holiday gifts, fashion accessories, home-decor, lifestyle, and cozy “gift-set” items—linking each cluster to distinct spending behavior for targeted promos and inventory planning.</li>
-            <li><strong>Stack:</strong> Python, pandas, NLTK, scikit-learn, seaborn, matplotlib, WordCloud.</li>
-          </ul>
-        </div>
-      </a>
-      <a href="https://github.com/JackLGood/SpectaclesWeatherApp" class="project-card">
-        <div class="card-content">
-          <h3>Interactive 3D Weather Visualizer with ChatGPT for AR Wearables</h3>
-          <img src="spectacles.gif" alt="Spectacles demo" class="card-visual">
-          <ul>
-            <li><strong>AI-driven Weather Summaries on-Device:</strong> Seamlessly integrate ChatGPT with real-time OpenWeatherMap data and reverse-geocoded location info to generate on-tap, natural-language weather insights in your Spectacles AR lens.</li>
-            <li><strong>Dynamic, Data-Responsive AR Pipeline:</strong> Leverage Texture2D mapping and dynamic VFX—driven by live temperature, conditions, and hourly forecasts—to render context-aware 3D models and icons that adapt instantly to changing weather.</li>
-            <li><strong>Robust Asynchronous & Interaction Framework:</strong> Architect an end-to-end, gesture-driven Lens Studio experience with efficient API caching, error handling, and responsive UI components for smooth, high-performance AR on wearable hardware.</li>
-            <li><strong>Stack:</strong> Augmented Reality, OpenAI ChatGPT API, Snap Lens Studio (JavaScript), Spectacles SDK, OpenWeatherMap & OpenCage APIs, WebGL/Texture2D rendering, geolocation & reverse-geocoding services.</li>
-          </ul>
-        </div>
-      </a>
-
-      <a href="https://github.com/JackLGood/Lightweight-Fine-Tuned-VLM/tree/main" class="project-card">
-        <div class="card-content">
-          <h3>Fine-tuned Vision Language Model for Generating Accurate Chart Captions</h3>
-          <ul>
-            <li><strong>Fine-tuned vision–language model:</strong> Designed and fine-tuned a lightweight BLIP-based model to produce highly accurate, semantically rich captions for data visualizations—making complex chart content accessible to blind and visually impaired users.</li>
-            <li><strong>Developed a minimalistic training pipeline:</strong> Distilled chart Q&A annotations into dense, trend-focused supervision signals, enabling rapid fine-tuning (3 epochs) on consumer-grade hardware with significant gains in caption clarity and relevance.</li>
-            <li><strong>Stack:</strong> Python, PyTorch, Hugging Face Transformers, BLIP, PIL.</li>
-          </ul>
-        </div>
-      </a>
-
-      <a href="#" class="project-card">
-        <div class="card-content">
-          <h3>Regularized Regression Pipeline for Airbnb Price Prediction</h3>
-          <ul>
-            <li><strong>Bench-marked linear, Ridge, and LASSO models on 540 Florence listings:</strong> engineered 24 host, location, and review features, visualized bias-variance trade-offs, and used 5-fold CV to pick λ values—cutting validation MSE from 4 953 (1-feature baseline) to 3 729 with Ridge.</li>
-            <li><strong>Delivered interpretable pricing insights for hosts:</strong> Ridge shrank noisy coefficients, spotlighting bedrooms (+$58) and neighborhood premium (+$1.6 k in Centro Storico) while generalizing best on the unseen test set (MSE ≈ 5 124).</li>
-            <li><strong>Stack:</strong> Python, pandas, scikit-learn, statsmodels, seaborn, matplotlib.</li>
-          </ul>
-        </div>
-      </a>
-
-      <a href="#" class="project-card">
-        <div class="card-content">
-          <h3>Term-Deposit Propensity Model — Ensemble Learning on Portuguese Bank Data</h3>
-          <ul>
-            <li><strong>Business impact & pipeline:</strong>  Built a production-style lead-scoring engine for a Portuguese bank—cleaned/encoded 16 raw fields into 50 + one-hot features with a ColumnTransformer, then generated fully reproducible splits to rank 20 k clients and cut ~90 % of wasted call-center outreach.</li>
-            <li><strong>Ensemble approach (CART → Random Forest → XGBoost):</strong>  Baseline CART → tuned Random Forest (AUC 0.942) → XGBoost (50 trees) topping ROC-AUC 0.946 on hold-out and slashing false-positive rate by 10 %, shipping a higher-yield call list to marketing ops.</li>
-            <li><strong>Stack:</strong> Python, XGBoost, pandas, NumPy, scikit-learn, seaborn.</li>
-          </ul>
-        </div>
-      </a>
-
-      <a href="#" class="project-card">
-        <div class="card-content">
-          <h3>LSTM-Driven Forecasting of Coca-Cola (KO) Stock Prices</h3>
-          <ul>
-            <li><strong>Built a full time-series pipeline from Yahoo Finance ingest to production-ready forecasts:</strong> pulled 10 yrs of KO closes, engineered rolling-mean baselines, framed a 90-day sliding window, and trained a 2-layer LSTM with early-stopping—cutting MAPE from 1.25 % (10-day MA) to < 0.8 % on the 20 % hold-out set.</li>
-            <li><strong>Demonstrated sequence-learning gains over classical methods:</strong> tuned 64/32-unit LSTM stack, achieved RMSE ≈ 0.42 and tracked regime shifts in post-COVID recovery, illustrating how deep RNNs capture long-horizon patterns that moving averages miss.</li>
-            <li><strong>Stack:</strong> Python, pandas, yfinance, TensorFlow/Keras, NumPy, scikit-learn, seaborn, matplotlib.</li>
-          </ul>
-        </div>
-      </a>
-
-      <a href="#" class="project-card">
-        <div class="card-content">
-          <h3>High-Accuracy Crop Recommendation Engine with K-NN & Soil-Climate Profiling</h3>
-          <ul>
-            <li><strong>Built a precision-ag pipeline from raw agronomic data to deployable recommender:</strong> merged rainfall, nutrient, and climate tables into 2 k+ farm records, visualized N-P-K vs. humidity/temperature, then tuned a k-NN classifier (k = 3) via 5-fold CV to hit 97 % test accuracy on 22 crop classes.</li>
-            <li><strong>Drove explainable, per-farm decisions for growers:</strong> standardized features to optimize Euclidean distance, generated similarity diagnostics (e.g., maize vs. peas soil demands), and delivered instant “what-if” predictions—recommending rice for sample N20 P40 K55/26 °C/7.2 pH scenarios.</li>
-            <li><strong>Stack:</strong> Python, pandas, scikit-learn (StandardScaler, KNeighborsClassifier, GridSearchCV), seaborn, matplotlib.</li>
-          </ul>
-        </div>
-      </a>
-      
-      <a href="#" class="project-card">
-        <div class="card-content">
-          <h3>Wine-Quality Classification with Linear & RBF Support-Vector Machines</h3>
-          <ul>
-            <li><strong>Modeled Portuguese “Vinho Verde” quality from chemistry:</strong> explored 1.6 k red-wine samples, visualized alcohol vs. volatile-acidity correlations, and framed a binary “good vs. bad” task; tuned C on linear SVM (grid 0.001 → 0.02) and RBF SVM (C = 0.5 → 20) via 5-fold CV, lifting test accuracy from 72 % (2-feature model) to 77 % (full RBF).</li>
-            <li><strong>Drove margin-vs-fit analysis & baseline benchmarking:</strong> plotted hyperplanes for extreme C values to illustrate over/under-fitting, contrasted SVM with logistic regression (75 % test accuracy), and surfaced key drivers—high alcohol and low volatile acidity—as top quality indicators.</li>
-            <li><strong>Stack:</strong> Python, pandas, scikit-learn (SVC, GridSearchCV, StandardScaler), seaborn, matplotlib.</li>
-          </ul>
-        </div>
-      </a>
-
-      <a href="#" class="project-card">
-        <div class="card-content">
-          <h3>Voter-Turnout Modeling & Cut-Off Tuning with Logistic Regression</h3>
-          <ul>
-            <li><strong>Predicted 2020 Georgia ballot-casting using 246 k voter records:</strong> engineered demographic and census-tract features (age, race, gender, income, education, car ownership, density), fit a non-regularized logistic model, and interpreted coefficients to surface key drivers (older, higher-income, female voters most likely to turn out).</li>
-            <li><strong>Optimized decision thresholds & evaluated fairness trade-offs:</strong> generated ROC/accuracy-vs-cutoff curves, confusion-matrix analytics, and scenario tests (voter A/B/C) to illustrate how varying income or age shifts predicted probabilities; recommended 0.5 cutoff for balanced 71 % test accuracy with minimal over-fit.</li>
-            <li><strong>Stack:</strong> Python, pandas, scikit-learn (LogisticRegression, confusion_matrix, RocCurveDisplay), seaborn, matplotlib.</li>
-          </ul>
-        </div>
-      </a>
-
-      <a href="#" class="project-card">
-        <div class="card-content">
-          <h3>Fashion-MNIST Image Classifier — 300-Neuron ANN in TensorFlow</h3>
-          <ul>
-            <li><strong>Engineered and trained a lean feed-forward network on 60 k gray-scale fashion images:</strong> flattened 28×28 inputs, used a single 300-ReLU hidden layer, tuned epochs via learning-curve inspection (≃ 12) to hit 85 % train / 82 % test accuracy — matching Random Forest performance while cutting inference latency to milliseconds.</li>
-            <li><strong>Bench-marked against five classic ML baselines (LogReg, DT, RF, KNN, XGBoost):</strong> measured wall-time vs. accuracy/AUC, showing the ANN delivers comparable accuracy to XGBoost (0.825 vs 0.894) but trains ≈ 3× faster than heavy tree ensembles on CPU; visualized mis-classified samples to guide future CNN upgrades.</li>
-            <li><strong>Stack:</strong> Python, TensorFlow/Keras, NumPy, pandas, scikit-learn, matplotlib.</li>
-          </ul>
-        </div>
-      </a>
-
-    </div>
-    <button id="show-more-btn" class="show-more-btn">
-      Show more projects
-    </button>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="section">
-    <h2>Experience</h2>
-    <div class="section-content">
-      <h3>Education</h3>
-      <ul>
-        <li><strong>Cornell University</strong> – College of Arts & Sciences/Bowers College of Computing and Information Science</li>
-        <li><strong>Relevant Coursework:</strong> Machine Learning, Computer Vision, AI Reasoning & Decision, Database Systems, Data Structures & Object-Oriented Programming, Computer System Organization, Functional Programming, Discrete Structures, and other good stuff</li>
-      </ul>
-
-      <h3>Technical Skills</h3>
-      <ul>
-        <li><strong>Languages:</strong> Python, Java, SQL, OCaml, C#, C++, JavaScript</li>
-        <li><strong>Frameworks/Libs:</strong> PyTorch, TensorFlow, scikit-learn, pandas, NumPy, Matplotlib, OpenCV, Jupyter, DeepFace, LangChain, OpenAI, REST APIs</li>
-        <li><strong>Tools:</strong> Git, Tableau, Stata, Figma, VS Code, Unity (C#/AR), LaTeX</li>
-      </ul>
-
-      <h3>Professional Experience</h3>
-      <h4>Cornell Tech – Undergraduate Researcher (Jun 2025 – Aug 2025)</h4>
-      <ul>
-        <li>ML/VLM applications in emotion detection and regulation</li>
-      </ul>
-      <h4>ATLAS Institute – Software Dev Intern (May 2024 – Aug 2024)</h4>
-      <ul>
-        <li>Human AI interaction research</li>
-      </ul>
-
-      <h4>Platt Park Capital – Data Intern (May 2023 – Aug 2023)</h4>
-      <ul>
-        <li>Healthcare and multi-site consumer</li>
-      </ul>
-
-      <h4>University of Colorado – Computational Chemistry Aide (Oct 2021 – Aug 2022)</h4>
-      <ul>
-        <li>Theoretical chemistry</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <div class="section-content">
-      <p><strong>Email:</strong> <a href="mailto:jacklianggood@gmail.com">jacklianggood@gmail.com</a></p>
-      <p><strong>Phone:</strong> (720) 668-7343</p>
-      <p><strong>Other:</strong> Mutual Investment Club of Cornell, Phi Chi Theta Professional Business Fraternity.</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Jack L. Good</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container">
+<main class="min-h-screen flex flex-col md:flex-row overflow-hidden">
+<!-- Left Side: Identity Anchor -->
+<section class="w-full md:w-[45%] lg:w-[40%] bg-surface flex flex-col p-8 md:p-16 lg:p-24 relative overflow-hidden justify-center pt-16 md:pt-24 lg:pt-32">
+<!-- Main Identity -->
+<div class="max-w-[200px] md:max-w-[280px] lg:max-w-[320px] mb-10">
+<img alt="Jack Good portrait" class="w-full h-[240px] md:h-[340px] lg:h-[400px] object-cover rounded-xl shadow-sm transition-all duration-700" src="cover.jpg" style="object-position: center 15%;"/>
+</div>
+<div class="z-10">
+<h1 class="font-headline text-6xl md:text-7xl lg:text-9xl font-extrabold tracking-tighter text-on-surface leading-[0.9]">
+                    Jack<br/>Good
+                </h1>
+</div>
+<!-- Background Aesthetic -->
+<div class="absolute -bottom-24 -left-24 w-96 h-96 bg-surface-container-low rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+</section>
+<!-- Right Side: Navigation & Interaction -->
+<section class="w-full md:w-[55%] lg:w-[60%] bg-surface-container-low flex items-center p-8 md:p-16 lg:p-24 relative">
+<nav class="w-full max-w-md">
+<ul class="flex flex-col gap-6 md:gap-10">
+<!-- Nav Item 1 -->
+<li>
+<a class="group flex items-baseline justify-between py-4 border-b border-outline-variant/30 hover:border-primary transition-all duration-500" href="#">
+<div class="flex flex-col">
+<span class="font-headline text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight text-on-surface group-hover:text-primary transition-colors duration-300">About</span>
+</div>
+<span class="material-symbols-outlined text-3xl opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-300" data-icon="north_east">north_east</span>
+</a>
+</li>
+<!-- Nav Item 2 -->
+<li>
+<a class="group flex items-baseline justify-between py-4 border-b border-outline-variant/30 hover:border-primary transition-all duration-500" href="#">
+<div class="flex flex-col">
+<span class="font-headline text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight text-on-surface group-hover:text-primary transition-colors duration-300">Projects</span>
+</div>
+<span class="material-symbols-outlined text-3xl opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-300" data-icon="north_east">north_east</span>
+</a>
+</li>
+<!-- Nav Item 3 -->
+<li>
+<a class="group flex items-baseline justify-between py-4 border-b border-outline-variant/30 hover:border-primary transition-all duration-500" href="#">
+<div class="flex flex-col">
+<span class="font-headline text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight text-on-surface group-hover:text-primary transition-colors duration-300">Experience</span>
+</div>
+<span class="material-symbols-outlined text-3xl opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-300" data-icon="north_east">north_east</span>
+</a>
+</li>
+</ul>
+</nav>
+<!-- Decorative Element: Vertical Line -->
+<div class="hidden lg:block absolute left-0 top-1/4 bottom-1/4 w-[1px] bg-outline-variant/20"></div>
+</section>
+</main>
+</body></html>
