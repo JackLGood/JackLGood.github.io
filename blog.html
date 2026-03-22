@@ -1,0 +1,249 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Journal - Digital Curator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed-variant": "#5a5c5c",
+              "surface": "#fcf9f8",
+              "on-secondary": "#f9f9f8",
+              "on-tertiary": "#f4faff",
+              "secondary-container": "#e2e2e2",
+              "tertiary-container": "#d0ecff",
+              "on-error": "#fff7f6",
+              "outline": "#7b7a7a",
+              "inverse-surface": "#0e0e0e",
+              "secondary-fixed": "#e2e2e2",
+              "on-primary-container": "#355757",
+              "surface-variant": "#e4e2e2",
+              "surface-tint": "#426464",
+              "on-tertiary-container": "#3e5868",
+              "on-surface": "#323232",
+              "on-primary": "#dafffe",
+              "on-primary-fixed-variant": "#3f6161",
+              "surface-container-lowest": "#ffffff",
+              "secondary": "#5d5f5f",
+              "primary-fixed": "#c5eae9",
+              "error-dim": "#4e0309",
+              "error": "#9f403d",
+              "on-tertiary-fixed-variant": "#486272",
+              "on-tertiary-fixed": "#2c4655",
+              "on-secondary-container": "#505252",
+              "primary-container": "#c5eae9",
+              "on-error-container": "#752121",
+              "on-secondary-fixed": "#3e4040",
+              "tertiary-fixed-dim": "#c2def0",
+              "on-background": "#323232",
+              "surface-container-highest": "#e4e2e2",
+              "error-container": "#fe8983",
+              "primary-fixed-dim": "#b7dbdb",
+              "tertiary-dim": "#3c5666",
+              "tertiary-fixed": "#d0ecff",
+              "inverse-primary": "#d8fefd",
+              "outline-variant": "#b3b2b1",
+              "secondary-fixed-dim": "#d4d4d4",
+              "surface-container-low": "#f6f3f2",
+              "primary-dim": "#365858",
+              "on-surface-variant": "#5f5f5f",
+              "primary": "#426464",
+              "on-primary-fixed": "#224545",
+              "inverse-on-surface": "#9e9c9c",
+              "surface-bright": "#fcf9f8",
+              "surface-dim": "#dbdad9",
+              "secondary-dim": "#515353",
+              "tertiary": "#486272",
+              "surface-container": "#f0eded",
+              "background": "#fcf9f8",
+              "surface-container-high": "#eae8e7"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fcf9f8]/80 dark:bg-[#0e0e0e]/80 backdrop-blur-xl">
+<div class="px-6 py-6 max-w-7xl mx-auto">
+<a class="flex items-center gap-1.5 text-[#9ca3af] hover:text-on-surface transition-colors group w-fit" href="#" style="">
+<span class="material-symbols-outlined text-[18px]" data-icon="arrow_back" style="">arrow_back</span>
+<span class="font-body text-sm font-medium" style="">BACK</span>
+</a>
+</div>
+</header>
+<main class="pt-32 pb-24 max-w-7xl mx-auto px-6 lg:px-12">
+<!-- Hero Section -->
+<div class="mb-24">
+<h1 class="text-7xl md:text-8xl lg:text-[10rem] font-extrabold tracking-tighter text-on-surface leading-[0.85] mb-8" style="">Blog</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-2xl font-body leading-relaxed" style="">
+                A digital archive of technical explorations, curated visuals, and the frequencies that power the creative process.
+            </p>
+</div>
+<!-- Section 1: Written Thoughts (Asymmetric Editorial Layout) -->
+<section class="mb-32">
+<div class="flex items-center justify-between mb-12 border-b border-outline-variant/10 pb-4">
+<h2 class="text-3xl font-bold tracking-tight" style="">Written Thoughts</h2>
+</div>
+<div class="space-y-24">
+<!-- Article 1 -->
+<article class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<div class="md:col-span-4 lg:col-span-3">
+<time class="text-sm font-label text-primary font-semibold tracking-wider">MARCH 14, 2024</time>
+</div>
+<div class="md:col-span-8 lg:col-span-9 max-w-3xl">
+<h3 class="text-3xl md:text-5xl font-bold mb-6 hover:text-primary transition-colors cursor-pointer leading-tight" style="">Architecture of Silence: Designing for Deep Focus.</h3>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-8" style="">Exploring the intersection of brutalist digital aesthetics and cognitive load. How removing structural chrome enhances the user's ability to engage with complex data sets.</p>
+<a class="inline-flex items-center gap-2 font-bold text-primary group" href="#" style="">
+                            Read Article 
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="east" style="">east</span>
+</a>
+</div>
+</article>
+<!-- Article 2 -->
+<article class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<div class="md:col-span-4 lg:col-span-3">
+<time class="text-sm font-label text-primary font-semibold tracking-wider">FEBRUARY 28, 2024</time>
+</div>
+<div class="md:col-span-8 lg:col-span-9 max-w-3xl">
+<h3 class="text-3xl md:text-5xl font-bold mb-6 hover:text-primary transition-colors cursor-pointer leading-tight" style="">The Precision of CSS Variable Systems.</h3>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-8" style="">Standardizing design tokens across multi-platform environments. Why a single source of truth is the most powerful tool in a developer's arsenal.</p>
+<a class="inline-flex items-center gap-2 font-bold text-primary group" href="#" style="">
+                            Read Article 
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="east" style="">east</span>
+</a>
+</div>
+</article>
+</div>
+</section>
+<!-- Section 2: Recommended Videos (Bento/Grid Layout) -->
+<section class="mb-32">
+<div class="flex items-center justify-between mb-12 border-b border-outline-variant/10 pb-4">
+<h2 class="text-3xl font-bold tracking-tight" style="">Recommended Videos</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Video Card 1 -->
+<div class="group">
+<div class="aspect-video bg-surface-container-low rounded-xl overflow-hidden mb-4 relative ring-1 ring-outline-variant/10">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class="w-full h-full" frameborder="0" src="https://www.youtube.com/embed/UF8uR6Z6KLc" title="Web3 Design Video"></iframe>
+</div>
+<h4 class="font-bold text-xl mb-1 group-hover:text-primary transition-colors" style="">Steve Jobs' Commencement Address</h4>
+<p class="text-sm text-on-surface-variant font-label" style="">"You can’t connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future."</p>
+</div>
+<!-- Video Card 2 -->
+<div class="group">
+<div class="aspect-video bg-surface-container-low rounded-xl overflow-hidden mb-4 relative ring-1 ring-outline-variant/10">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105" data-alt="Macro shot of a vintage mechanical keyboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwRJiIr3k6ygV1VjJcAc4a7wBvbtQpXrIGlPI7E-VIvHLHXUtn9rfMioj57zB-CBbAsyjsDTIzLbS702nf-I9oqRkKrE2uBkJf6XLlQDlX4cGs9Xk1fl6ilvaUMgGDvMDFiWTNx1l-vTawRr6W1SL9uxLn23dfDXm7zG-ZSMEeJWEwV5MHuZK4tWXD1JB5TBGNut6ekaTyTNsREIAWWWA1j51xmO1FImFVnEC1mRQ_Rn0in9Q9jCgIeLjjkGDXm338EeayXu5lENcx" style="">
+<div class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-white text-5xl" data-icon="play_circle" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">play_circle</span>
+</div>
+</div>
+<h4 class="font-bold text-xl mb-1 group-hover:text-primary transition-colors" style="">Tactile Hardware Reviews</h4>
+<p class="text-sm text-on-surface-variant font-label" style="">The sound of productivity</p>
+</div>
+<!-- Video Card 3 -->
+<div class="group">
+<div class="aspect-video bg-surface-container-low rounded-xl overflow-hidden mb-4 relative ring-1 ring-outline-variant/10">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105" data-alt="Modern architectural lines against a clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZDx2E9TifbBmI6sU4CqKnXUxgSdl3tiT2NgZ1LMvsNsuLJLccs-Q2-LhN2P1esfx0Hr1aQh7bI6dKj5DCXMxHrEdfIXwMgkF8e5wbmY6Fwg4SMZusslhrBPa5PWUsx6NdgfGR21i0Au1pI7AXklGxwYdN12jiH79-82c0hMZJhGKSPtf5ZxzrHfS0c7b4v_F1iYHwTKYw44WvkyCN3EjqAlvYDEhc44oF_okqPGUwprJDJwO8mIktLnxKJqT8YPPkNPpoHecAh2DJ" style="">
+<div class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-white text-5xl" data-icon="play_circle" data-weight="fill" style="font-variation-settings: &quot;FILL&quot; 1;">play_circle</span>
+</div>
+</div>
+<h4 class="font-bold text-xl mb-1 group-hover:text-primary transition-colors" style="">Generative Art Essentials</h4>
+<p class="text-sm text-on-surface-variant font-label" style="">Coding visual symphonies</p>
+</div>
+</div>
+</section>
+<!-- Section 3: Favorite Songs (Glassmorphism / List Layout) -->
+<section class="mb-12">
+<div class="flex items-center justify-between mb-12 border-b border-outline-variant/10 pb-4">
+<h2 class="text-3xl font-bold tracking-tight" style="">Favorite Songs</h2>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-8 md:p-12 ring-1 ring-outline-variant/10">
+<div class="space-y-4">
+<!-- Song 1 -->
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-highest transition-colors rounded-xl group">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 bg-primary rounded flex items-center justify-center text-on-primary font-bold" style="">01</div>
+<div>
+<p class="font-bold text-lg leading-none" style="">Midnight City</p>
+<p class="text-sm text-on-surface-variant font-label mt-1" style="">M83</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity" data-icon="headphones" style="">headphones</span>
+</div>
+<!-- Song 2 -->
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-highest transition-colors rounded-xl group border-t border-outline-variant/5">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 bg-surface-container rounded flex items-center justify-center text-on-surface-variant font-bold" style="">02</div>
+<div>
+<p class="font-bold text-lg leading-none" style="">Starboy</p>
+<p class="text-sm text-on-surface-variant font-label mt-1" style="">The Weeknd</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity" data-icon="headphones" style="">headphones</span>
+</div>
+<!-- Song 3 -->
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-highest transition-colors rounded-xl group border-t border-outline-variant/5">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 bg-surface-container rounded flex items-center justify-center text-on-surface-variant font-bold" style="">03</div>
+<div>
+<p class="font-bold text-lg leading-none" style="">Contact</p>
+<p class="text-sm text-on-surface-variant font-label mt-1" style="">Daft Punk</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity" data-icon="headphones" style="">headphones</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 mt-24">
+<div class="px-8 max-w-7xl mx-auto text-center md:text-left">
+<p class="font-body text-sm leading-relaxed text-[#9ca3af]" style="">
+                Please direct all complaints to: jacklianggood@gmail.com
+            </p>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<div class="md:hidden fixed bottom-6 left-0 w-full flex justify-center z-50 px-4">
+<nav class="w-full max-w-md bg-[#fcf9f8]/80 dark:bg-[#0e0e0e]/80 backdrop-blur-xl rounded-full border border-[#0e0e0e]/5 dark:border-[#fcf9f8]/5 shadow-[0_24px_48px_-12px_rgba(50,50,50,0.08)] px-2 py-2 flex justify-around items-center">
+<a class="flex flex-col items-center justify-center text-[#1A1A1A]/50 dark:text-[#fcf9f8]/50 hover:text-[#426464] dark:hover:text-[#527a7a] transition-all" href="#" style="">
+<span class="material-symbols-outlined" data-icon="home_app_logo" style="">home_app_logo</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide uppercase mt-1" style="">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#426464] text-white rounded-full w-12 h-12 shadow-lg" href="#" style="">
+<span class="material-symbols-outlined" data-icon="edit_note" style="">edit_note</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1A1A1A]/50 dark:text-[#fcf9f8]/50 hover:text-[#426464] dark:hover:text-[#527a7a] transition-all" href="#" style="">
+<span class="material-symbols-outlined" data-icon="inventory_2" style="">inventory_2</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide uppercase mt-1" style="">Archive</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1A1A1A]/50 dark:text-[#fcf9f8]/50 hover:text-[#426464] dark:hover:text-[#527a7a] transition-all" href="#" style="">
+<span class="material-symbols-outlined" data-icon="settings" style="">settings</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide uppercase mt-1" style="">Settings</span>
+</a>
+</nav>
+</div>
+</body></html>
