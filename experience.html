@@ -1,182 +1,327 @@
-<!DOCTYPE html><html class="light" lang="en"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Experience | EC</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "tertiary-fixed": "#d0ecff",
-              "surface-bright": "#fcf9f8",
-              "on-tertiary-container": "#3e5868",
-              "on-secondary-container": "#505252",
-              "outline-variant": "#b3b2b1",
-              "inverse-primary": "#d8fefd",
-              "on-tertiary-fixed-variant": "#486272",
-              "on-secondary-fixed-variant": "#5a5c5c",
-              "inverse-surface": "#0e0e0e",
-              "on-primary-container": "#355757",
-              "secondary-fixed-dim": "#d4d4d4",
-              "secondary-container": "#e2e2e2",
-              "on-error": "#fff7f6",
-              "on-secondary-fixed": "#3e4040",
-              "tertiary-container": "#d0ecff",
-              "surface-variant": "#e4e2e2",
-              "tertiary-dim": "#3c5666",
-              "surface-container": "#f0eded",
-              "primary-fixed": "#c5eae9",
-              "on-tertiary-fixed": "#2c4655",
-              "outline": "#7b7a7a",
-              "surface": "#fcf9f8",
-              "primary-fixed-dim": "#b7dbdb",
-              "on-secondary": "#f9f9f8",
-              "primary": "#426464",
-              "error-dim": "#4e0309",
-              "background": "#fcf9f8",
-              "tertiary-fixed-dim": "#c2def0",
-              "primary-container": "#c5eae9",
-              "error": "#9f403d",
-              "on-tertiary": "#f4faff",
-              "surface-container-low": "#f6f3f2",
-              "on-error-container": "#752121",
-              "secondary-dim": "#515353",
-              "on-surface-variant": "#5f5f5f",
-              "on-background": "#323232",
-              "surface-dim": "#dbdad9",
-              "on-surface": "#323232",
-              "on-primary-fixed": "#224545",
-              "surface-container-high": "#eae8e7",
-              "surface-container-highest": "#e4e2e2",
-              "surface-container-lowest": "#ffffff",
-              "on-primary": "#dafffe",
-              "secondary-fixed": "#e2e2e2",
-              "on-primary-fixed-variant": "#3f6161",
-              "tertiary": "#486272",
-              "secondary": "#5d5f5f",
-              "error-container": "#fe8983",
-              "primary-dim": "#365858",
-              "inverse-on-surface": "#9e9c9c",
-              "surface-tint": "#426464"
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-surface-variant": "#5f5f5f",
+                        "surface-container-highest": "#e4e2e2",
+                        "on-surface": "#323232",
+                        "tertiary-dim": "#3c5666",
+                        "surface-container-high": "#eae8e7",
+                        "on-primary-fixed-variant": "#3f6161",
+                        "on-tertiary-container": "#3e5868",
+                        "surface-dim": "#dbdad9",
+                        "on-tertiary": "#f4faff",
+                        "on-background": "#323232",
+                        "tertiary": "#486272",
+                        "on-tertiary-fixed-variant": "#486272",
+                        "primary-container": "#c5eae9",
+                        "inverse-primary": "#d8fefd",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#355757",
+                        "surface-tint": "#426464",
+                        "inverse-on-surface": "#9e9c9c",
+                        "surface-container": "#f0eded",
+                        "on-error-container": "#752121",
+                        "secondary-fixed-dim": "#d4d4d4",
+                        "error-container": "#fe8983",
+                        "tertiary-container": "#d0ecff",
+                        "tertiary-fixed": "#d0ecff",
+                        "primary-fixed": "#c5eae9",
+                        "on-primary": "#dafffe",
+                        "error": "#9f403d",
+                        "surface-variant": "#e4e2e2",
+                        "secondary-dim": "#515353",
+                        "on-secondary": "#f9f9f8",
+                        "primary-fixed-dim": "#b7dbdb",
+                        "on-primary-fixed": "#224545",
+                        "secondary-fixed": "#e2e2e2",
+                        "primary": "#426464",
+                        "outline-variant": "#b3b2b1",
+                        "on-secondary-fixed": "#3e4040",
+                        "surface-container-low": "#f6f3f2",
+                        "secondary": "#5d5f5f",
+                        "on-tertiary-fixed": "#2c4655",
+                        "error-dim": "#4e0309",
+                        "secondary-container": "#e2e2e2",
+                        "background": "#fcf9f8",
+                        "on-secondary-fixed-variant": "#5a5c5c",
+                        "on-error": "#fff7f6",
+                        "surface-bright": "#fcf9f8",
+                        "surface": "#fcf9f8",
+                        "outline": "#7b7a7a",
+                        "on-secondary-container": "#505252",
+                        "inverse-surface": "#0e0e0e",
+                        "tertiary-fixed-dim": "#c2def0",
+                        "primary-dim": "#365858"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
             },
-            fontFamily: {
-              "headline": ["Manrope"],
-              "body": ["Inter"],
-              "label": ["Inter"]
-            },
-            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
-          },
-        },
-      }
+        }
     </script>
 <style>
-      .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        vertical-align: middle;
-      }
-      .tonal-shift-on-scroll {
-        transition: background-color 0.3s ease;
-      }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #fcf9f8;
+            color: #323232;
+        }
+        .scroll-mt-40 {
+            scroll-margin-top: 10rem;
+        }
     </style>
 </head>
-<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
-<!-- Header Navigation -->
-<nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md">
-<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-6">
-<a class="flex items-center gap-2 text-stone-500 hover:text-stone-900 transition-colors font-medium" href="index.html" style="">
-<span class="material-symbols-outlined" data-icon="arrow_back" style="">arrow_back</span>
-<span class="" style="">BACK</span>
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 w-full z-50 bg-[#fcf9f8]/80 backdrop-blur-xl">
+<nav class="flex justify-between items-center w-full px-8 py-8 max-w-7xl mx-auto">
+<a class="group flex items-center gap-2 font-label font-medium transition-colors duration-300 text-zinc-500" href="index.html" style="">
+<span class="material-symbols-outlined text-sm" style="">arrow_back</span>
+<span class="tracking-tight" style="">BACK</span>
 </a>
-</div>
 </nav>
-<!-- Main Content Canvas -->
-<main class="max-w-7xl mx-auto px-8 pt-40 pb-24">
-<!-- Hero Section -->
-<header class="mb-24">
-<h1 class="font-headline font-extrabold text-7xl md:text-8xl tracking-tighter text-inverse-surface mb-6" style="">
-                Projects
-            </h1>
 </header>
-<!-- Projects List (Editorial Style) -->
-<div class="space-y-32">
-<!-- Project 01 -->
-<section class="grid grid-cols-1 md:grid-cols-12 gap-12 group">
-<div class="md:col-span-4">
-<div class="relative overflow-hidden rounded-xl bg-surface-container-low aspect-video md:aspect-square">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="Deep blue server rack with glowing lights representing data storage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQfhk2--xc6vf2rzL_yIXu9xN-CFZc7qv1SH28rfTI7GviXaj17ZR9sM36LvP-fIO9WntXuHcSB0boV-HsUMpqYwv6dXnKvCJ9IYufN5Dxmxjcao32oNvNWLwk08mMjv8MZb23DZo4WeCuSaCl-TugbhlAsV0HTLjvICgrZzw2SjOwdgBB_m8HNb0JJNkr-ZDQ8Cg80eGU-8--8qO8ilvXQtuGZcJq-OVeb2ULrdKFfKurQmogOIt4AIuYIXZydndpYAgNamYfLI-b" style="">
-<div class="absolute inset-0 bg-primary/10 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<main class="pt-32 pb-40 max-w-7xl mx-auto px-8">
+<!-- Hero Section: Editorial Header -->
+<section class="flex justify-end mb-32">
+<h1 class="font-headline font-extrabold text-7xl md:text-8xl tracking-tighter text-inverse-surface" style="">
+                Experience</h1>
+</section>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-24">
+<!-- Side Navigation / Context (Hidden on Mobile) -->
+<aside class="hidden md:block md:col-span-3">
+<div class="sticky top-40 space-y-4">
+<p class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant mb-8" style="">Curated Summary</p>
+<nav class="flex flex-col space-y-6">
+<a class="text-on-surface font-headline font-bold text-xl hover:text-primary transition-colors" href="#work" style="">Work</a>
+<a class="text-on-surface font-headline font-bold text-xl hover:text-primary transition-colors" href="#education" style="">Education</a>
+<a class="text-on-surface font-headline font-bold text-xl hover:text-primary transition-colors" href="#stack" style="">Technical Stack</a>
+</nav>
 </div>
+</aside>
+<!-- Main Content Canvas -->
+<div class="md:col-span-9 space-y-32">
+<!-- Section: Work -->
+<section class="scroll-mt-40" id="work">
+<div class="flex items-center gap-4 mb-16">
+<span class="w-12 h-[1px] bg-outline-variant"></span>
+<h2 class="font-headline font-bold text-2xl tracking-tight" style="">Work</h2>
 </div>
-<div class="md:col-span-8 flex flex-col justify-center">
-<div class="flex flex-wrap gap-2 mb-6">
-<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label text-[10px] uppercase tracking-wider font-bold" style="">Pytorch</span>
-<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label text-[10px] uppercase tracking-wider font-bold" style="">React</span>
-<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label text-[10px] uppercase tracking-wider font-bold" style="">ONNX</span>
+<div class="space-y-24">
+<!-- Experience 1 -->
+<article class="grid grid-cols-1 lg:grid-cols-10 gap-6">
+<div class="lg:col-span-3">
+<p class="font-label text-sm text-on-surface-variant font-medium" style="">May 2025 — Present</p>
 </div>
-<h2 class="font-headline font-bold text-4xl text-stone-900 mb-4 tracking-tight" style="">Empathetic Multimodal Conversational AI</h2>
-<p class="text-on-surface-variant text-lg leading-relaxed mb-8 max-w-2xl" style="">
-                        Full-stack web app integrating PyTorch ML models with OpenAI/ElevenLabs APIs for a multimodal AI therapist.&nbsp;Orchestrated multimodal nonverbal cue recognition pipeline for facial and voice affect adapting to emotional status</p>
-<div class="flex items-center gap-6">
-<a class="group/link flex items-center gap-2 text-primary font-bold transition-all" href="#" style="">
-                            View on GitHub
-                            <span class="material-symbols-outlined transition-transform group-hover/link:translate-x-1" data-icon="arrow_forward" style="">arrow_forward</span>
-</a>
-<a class="text-stone-400 hover:text-stone-900 transition-colors text-sm font-medium" href="#" style="">Documentation</a>
+<div class="lg:col-span-7">
+<h3 class="font-headline font-extrabold text-2xl mb-1" style="">Computer Vision Research Intern</h3>
+<p class="text-primary font-bold text-lg mb-6" style="">Cornell Tech</p>
+<ul class="space-y-4 text-on-surface leading-relaxed max-w-2xl">
+<li class="flex gap-4" style="">
+<span class="text-primary mt-1.5 shrink-0 material-symbols-outlined text-[10px]" style='font-variation-settings: "FILL" 1;'>circle</span>
+                                        Received $7000 grant from Cornell CIS for research on the application of CV and ML models in clinical settings.
+                                    </li>
+<li class="flex gap-4" style="">
+<span class="text-primary mt-1.5 shrink-0 material-symbols-outlined text-[10px]" style='font-variation-settings: "FILL" 1;'>circle</span>
+                                        Built full-stack web app via FastAPI/PyTorch for emotion detection, using model inference with dynamic frontend.
+                                    </li>
+<li class="flex gap-4" style="">
+<span class="text-primary mt-1.5 shrink-0 material-symbols-outlined text-[10px]" style='font-variation-settings: "FILL" 1;'>circle</span>
+                                        Achieved a 35% accuracy gain in chart captioning by fine-tuning a vision-language model on modest lab hardware.
+                                    </li>
+</ul>
+</div>
+</article>
+<!-- Experience 2 -->
+<article class="grid grid-cols-1 lg:grid-cols-10 gap-6">
+<div class="lg:col-span-3">
+<p class="font-label text-sm text-on-surface-variant font-medium" style="">May 2024 — Aug 2024</p>
+</div>
+<div class="lg:col-span-7">
+<h3 class="font-headline font-extrabold text-2xl mb-1" style="">Computer Graphics Research Intern</h3>
+<p class="text-primary font-bold text-lg mb-6" style="">University of Colorado</p>
+<ul class="space-y-4 text-on-surface leading-relaxed max-w-2xl">
+<li class="flex gap-4" style="">
+<span class="text-primary mt-1.5 shrink-0 material-symbols-outlined text-[10px]" style='font-variation-settings: "FILL" 1;'>circle</span>
+                                        Used Open3D voxel downsampling to 5 mm, decreasing clouds from 1.0M to 120k points with 2 cm RMSE.
+                                    </li>
+<li class="flex gap-4" style="">
+<span class="text-primary mt-1.5 shrink-0 material-symbols-outlined text-[10px]" style='font-variation-settings: "FILL" 1;'>circle</span>
+                                        Developed code to generate 3D assets with Stable Diffusion and reducing load time to &lt;120 ms for VR interaction.
+                                    </li>
+<li class="flex gap-4" style="">
+<span class="text-primary mt-1.5 shrink-0 material-symbols-outlined text-[10px]" style='font-variation-settings: "FILL" 1;'>circle</span>
+                                        Computed normals in PCL on 200k point clouds and improved ICP convergence from 69% to 91% in 50 trials.
+                                    </li>
+</ul>
+</div>
+</article>
+<!-- Experience 3 -->
+<article class="grid grid-cols-1 lg:grid-cols-10 gap-6">
+<div class="lg:col-span-3">
+<p class="font-label text-sm text-on-surface-variant font-medium" style="">May 2023 — Aug 2023</p>
+</div>
+<div class="lg:col-span-7">
+<h3 class="font-headline font-extrabold text-2xl mb-1" style="">Data Science and Analytics Intern</h3>
+<p class="text-primary font-bold text-lg mb-6" style="">Platt Park Capital</p>
+<ul class="space-y-4 text-on-surface leading-relaxed max-w-2xl">
+<li class="flex gap-4" style="">
+<span class="text-primary mt-1.5 shrink-0 material-symbols-outlined text-[10px]" style='font-variation-settings: "FILL" 1;'>circle</span>
+                                        Quantified behavioral healthcare gaps across 3,000 U.S. counties using XGBoost model on CMS/SAMHSA claims.
+                                    </li>
+<li class="flex gap-4" style="">
+<span class="text-primary mt-1.5 shrink-0 material-symbols-outlined text-[10px]" style='font-variation-settings: "FILL" 1;'>circle</span>
+                                        Model insights triggered a $2M pivot into Mountain West clinics, reshaping the firm’s healthcare investment thesis.
+                                    </li>
+<li class="flex gap-4" style="">
+<span class="text-primary mt-1.5 shrink-0 material-symbols-outlined text-[10px]" style='font-variation-settings: "FILL" 1;'>circle</span>
+                                        Created investment dashboard to automate performance tracking across 11 holdings using Python and PostgreSQL.
+                                    </li>
+</ul>
+</div>
+</article>
+<!-- Experience 4 -->
+<article class="grid grid-cols-1 lg:grid-cols-10 gap-6">
+<div class="lg:col-span-3">
+<p class="font-label text-sm text-on-surface-variant font-medium" style="">Oct 2021 — Aug 2022</p>
+</div>
+<div class="lg:col-span-7">
+<h3 class="font-headline font-extrabold text-2xl mb-1" style="">Computational Chemistry Research Aide</h3>
+<p class="text-primary font-bold text-lg mb-6" style="">University of Colorado</p>
+<ul class="space-y-4 text-on-surface leading-relaxed max-w-2xl">
+<li class="flex gap-4" style="">
+<span class="text-primary mt-1.5 shrink-0 material-symbols-outlined text-[10px]" style='font-variation-settings: "FILL" 1;'>circle</span>
+                                        Collaborated with grad students on a GQME model, contributing to regression model with R² = 0.72 on test data.
+                                    </li>
+<li class="flex gap-4" style="">
+<span class="text-primary mt-1.5 shrink-0 material-symbols-outlined text-[10px]" style='font-variation-settings: "FILL" 1;'>circle</span>
+                                        Presented two, 30 minute department wide presentations on the derivation of the ‘GQME’ to an audience of 40+.
+                                    </li>
+<li class="flex gap-4" style="">
+<span class="text-primary mt-1.5 shrink-0 material-symbols-outlined text-[10px]" style='font-variation-settings: "FILL" 1;'>circle</span>
+                                        Processed SMILE data for 1,200+ molecules using Python and RDKit, ensuring consistency for ML pipeline inputs.
+                                    </li>
+</ul>
+</div>
+</article>
+</div>
+</section>
+<!-- Section: Education -->
+<section class="scroll-mt-40" id="education">
+<div class="flex items-center gap-4 mb-16">
+<span class="w-12 h-[1px] bg-outline-variant"></span>
+<h2 class="font-headline font-bold text-2xl tracking-tight" style="">Education</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Cornell -->
+<div class="bg-surface-container-low p-10 rounded-xl relative overflow-hidden group">
+<div class="absolute -right-4 -bottom-4 opacity-5 group-hover:opacity-10 transition-opacity">
+<img alt="Cornell University crest logo" class="w-48 h-48 grayscale" src="https://lh3.googleusercontent.com/aida/ADBb0uhd6kzy1ldemgqoCON6pPrY-AlQMhzJLYSKzlx3bbueRBGR7ZcIoakIJsHD6rd6oToy0xRdxcexdvDiPQNwBYjyd9ml089o0AiTaK_1C7Mh_d2H-9IeIB9jQZq5hQCr8R7WdNa1d7TjkvVdtliXkdOhw4CqpEJK2fq6zeU7pVOLGDY_uOm_kvK8dnGtTKP-egbpq1v2aulK6wo01Vml497ElBSwQr08bhhvOvbfVGg4yr5K8sAGzQGJqBYe_GvQzqNLJ-Grzto9hMA" style=""/>
+</div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" style="">school</span>
+<h3 class="font-headline font-extrabold text-xl mb-2" style="">B.A. Computer Science</h3>
+<p class="text-on-surface-variant font-medium mb-4" style="">Cornell University</p>
+<div class="inline-block px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-label font-bold tracking-widest uppercase" style="">Class of 2023</div>
+<div class="mt-6">
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-2" style="">Relevant Coursework</p>
+<p class="font-body text-xs text-on-surface/70 leading-relaxed" style="">
+        Data Structures, Algorithms, Operating Systems, Software Engineering
+    </p>
+</div></div>
+</div>
+<!-- M.S. (TBD) -->
+<div class="bg-inverse-surface text-on-tertiary p-10 rounded-xl relative overflow-hidden group">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-6" style="">science</span>
+<h3 class="font-headline font-extrabold text-xl mb-2" style="">M.S. Computer Science</h3>
+<p class="text-on-tertiary/60 font-medium mb-4" style="">Focus: Machine Learning Systems</p>
+<div class="inline-block px-3 py-1 bg-primary/20 rounded-full text-[10px] font-label font-bold tracking-widest uppercase text-primary-container" style="">In Progress (TBD)</div>
+<div class="mt-6">
+<p class="font-label text-[10px] uppercase tracking-widest text-on-tertiary/60 font-bold mb-2" style="">Relevant Coursework</p>
+<p class="font-body text-xs text-on-tertiary/40 leading-relaxed" style="">
+        Advanced Machine Learning, Computer Vision, Neural Networks, Distributed Systems
+    </p>
+</div></div>
 </div>
 </div>
 </section>
-<!-- Project 02 -->
-<section class="grid grid-cols-1 md:grid-cols-12 gap-12 group">
-<div class="md:col-span-8 flex flex-col justify-center order-2 md:order-1">
-<div class="flex flex-wrap gap-2 mb-6"><span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label text-[10px] uppercase tracking-wider font-bold" style="">PyTorch</span>
-<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label text-[10px] uppercase tracking-wider font-bold" style="">NumPy</span></div>
-<h2 class="font-headline font-bold text-4xl text-stone-900 mb-4 tracking-tight" style="">Recreation of 3D Neural Radiance Field Paper</h2>
-<p class="text-on-surface-variant text-lg leading-relaxed mb-8 max-w-2xl" style="">This project recreated the Neural Radiance Fields (NeRF) paper in PyTorch and NumPy to learn a 3D scene from multi-view images and render novel viewpoints. I implemented the full training pipeline, including custom ray sampling and positional encoding techniques that improved training stability and reduced view-dependent artifacts.</p>
-<div class="flex items-center gap-6">
-<a class="group/link flex items-center gap-2 text-primary font-bold transition-all" href="#" style="">
-                            Live Notebook
-                            <span class="material-symbols-outlined transition-transform group-hover/link:translate-x-1" data-icon="open_in_new" style="">open_in_new</span>
-</a>
+<!-- Section: Technical Stack (Bento Grid) -->
+<section class="scroll-mt-40" id="stack">
+<div class="flex items-center gap-4 mb-16">
+<span class="w-12 h-[1px] bg-outline-variant"></span>
+<h2 class="font-headline font-bold text-2xl tracking-tight" style="">Technical Stack</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<!-- Group: Languages -->
+<div class="col-span-2 row-span-2 bg-surface-container-low p-8 rounded-xl flex flex-col justify-between border border-outline-variant/10">
+<div>
+<h4 class="font-headline font-bold text-on-surface-variant text-sm uppercase tracking-widest mb-6" style="">Languages</h4>
+<div class="flex flex-wrap gap-2"><span class="px-4 py-2 bg-surface-container-highest rounded-full text-xs font-bold font-label" style="">PYTHON</span>
+<span class="px-4 py-2 bg-surface-container-highest rounded-full text-xs font-bold font-label" style="">C/C++</span>
+<span class="px-4 py-2 bg-surface-container-highest rounded-full text-xs font-bold font-label" style="">JAVA</span>
+<span class="px-4 py-2 bg-surface-container-highest rounded-full text-xs font-bold font-label" style="">C#</span>
+<span class="px-4 py-2 bg-surface-container-highest rounded-full text-xs font-bold font-label" style="">SQL</span>
+<span class="px-4 py-2 bg-surface-container-highest rounded-full text-xs font-bold font-label" style="">JAVASCRIPT</span>
+<span class="px-4 py-2 bg-surface-container-highest rounded-full text-xs font-bold font-label" style="">ASSEMBLY [RISC-V]</span></div>
+</div>
+<span class="material-symbols-outlined text-primary/20 text-6xl self-end" style="">code</span>
+</div>
+<!-- Group: Infrastructure -->
+<div class="col-span-2 bg-primary text-on-primary p-8 rounded-xl border border-primary-dim">
+<h4 class="font-headline font-bold text-on-primary/60 text-sm uppercase tracking-widest mb-6" style="">FRAMEWORKS / LIBRARIES</h4>
+<div class="flex flex-wrap gap-2">
+<span class="px-4 py-2 bg-on-primary/10 rounded-full text-xs font-bold font-label" style="">PYTORCH</span>
+<span class="px-4 py-2 bg-on-primary/10 rounded-full text-xs font-bold font-label" style="">TENSORFLOW</span>
+<span class="px-4 py-2 bg-on-primary/10 rounded-full text-xs font-bold font-label" style="">REACT</span>
+<span class="px-4 py-2 bg-on-primary/10 rounded-full text-xs font-bold font-label" style="">OPENCV</span>
+<span class="px-4 py-2 bg-on-primary/10 rounded-full text-xs font-bold font-label" style="">SCIKIT-LEARN</span>
+<span class="px-4 py-2 bg-on-primary/10 rounded-full text-xs font-bold font-label" style="">PANDAS</span>
+<span class="px-4 py-2 bg-on-primary/10 rounded-full text-xs font-bold font-label" style="">NUMPY</span>
+<span class="px-4 py-2 bg-on-primary/10 rounded-full text-xs font-bold font-label" style="">LANGCHAIN</span>
+<span class="px-4 py-2 bg-on-primary/10 rounded-full text-xs font-bold font-label" style="">ONNX</span>
 </div>
 </div>
-<div class="md:col-span-4 order-1 md:order-2">
-<div class="relative overflow-hidden rounded-xl bg-surface-container-low aspect-video md:aspect-square">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="Abstract mathematical visualization of neural connections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHQLPJagn74B4rzBHqObqNJ5a4qrhTKKQbKnyyOyZacIUIezWSl4EbnhU35a2mbkfxDyAZaxJ5vDMgU1GLfnwmaLwRETCPsA-bC9T0U5CrRX7LBDLVBmAEMu0j_b83klD3ZUepptWqtZWIo7_VHAbiaORBtwRkck3tqRPykBZCBsHre4vBJ8hqAX_xmLdBHC-jhT0-m6pYbi6cdSqDA_p3D4WrOLxydP5JGFFzP7kT2K1FKxRoYzuKl4vXTERzLQizmrgjAqus9dL4" style="">
-<div class="absolute inset-0 bg-primary/10 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<!-- Group: Databases -->
+<div class="bg-surface-container-highest p-8 rounded-xl flex flex-col items-center justify-center text-center"><h4 class="font-headline font-bold text-on-surface-variant text-[10px] uppercase tracking-[0.2em] mb-4" style="">TOOLS / PLATFORMS</h4>
+<p class="font-headline font-bold text-lg" style="">Git</p>
+<p class="font-headline font-bold text-lg" style="">CUDA</p>
+<p class="font-headline font-bold text-lg" style="">HuggingFace</p>
+<p class="font-headline font-bold text-lg" style="">Docker</p>
+<p class="font-headline font-bold text-lg" style="">Linux</p>
+<p class="font-headline font-bold text-lg" style="">BigQuery</p>
+<p class="font-headline font-bold text-lg" style="">Unity</p></div>
+<!-- Group: Tools -->
+<div class="bg-surface-container-low p-8 rounded-xl flex flex-col items-center justify-center text-center">
+<h4 class="font-headline font-bold text-on-surface-variant text-[10px] uppercase tracking-[0.2em] mb-4" style="">COURSES</h4>
+<p class="font-headline font-bold text-lg" style="">Computer Vision</p>
+<p class="font-headline font-bold text-lg" style="">Machine Learning</p>
+<p class="font-headline font-bold text-lg" style="">Robotics</p><p class="font-headline font-bold text-lg" style="">NLP</p>
 </div>
 </div>
 </section>
-<!-- Project 03 -->
-<section class="grid grid-cols-1 md:grid-cols-12 gap-12 group">
-<div class="md:col-span-4">
-<div class="relative overflow-hidden rounded-xl bg-surface-container-low aspect-video md:aspect-square">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" data-alt="Close up of high tech circuit board with teal lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKTMdKhEHp5Er8eR0eIglAjoXbzi_r1G7mfEtMnzOJ_wdcC7SzHNK1TiACngL8sioF17gjaEKpzcAbPpKePMEkSU0AF5W5HEYKEbFYNr725WCX3fb7clWCNSbZYrlDCo8_WNnxGLlMFF9jjPwbdH4jXWYk6liw8R9QyGjSqb6-O_-Oe3LwyqdkFMff_ncK16Jfvqk5BpEwXNZwb6ptfQudB79gforqNlhArBHCMEZIyxuFQElw_HIneFmWaVxr9ZUgTnInFpXbKKct" style="">
-<div class="absolute inset-0 bg-primary/10 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity"></div>
 </div>
-</div>
-<div class="md:col-span-8 flex flex-col justify-center">
-<div class="flex flex-wrap gap-2 mb-6">
-<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label text-[10px] uppercase tracking-wider font-bold" style="">PyTorch</span>
-<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label text-[10px] uppercase tracking-wider font-bold" style="">CUDA</span>
-<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label text-[10px] uppercase tracking-wider font-bold" style="">REsnet/unet</span>
-</div>
-<h2 class="font-headline font-bold text-4xl text-stone-900 mb-4 tracking-tight" style="">Deep Learning Clothing Semantic Segmentation</h2>
-<p class="text-on-surface-variant text-lg leading-relaxed mb-8 max-w-2xl" style=""><div>A vision based semantic segmentation with ResNet-18 and U-Net on 1k+ clothing images using PyTorch.&nbsp;<span style="font-size: 1.125rem;">Trained multi-class and binary models with Adam, monitoring loss and per-class accuracy on validation data.&nbsp;</span><span style="font-size: 1.125rem;">Leveraged CUDA GPUs in Colab to accelerate training and evaluation, achieving 0.48 and 0.045 validation loss.</span></div></p>
-<div class="flex items-center gap-6">
-<a class="group/link flex items-center gap-2 text-primary font-bold transition-all" href="#" style="">
-                            View on GitHub
-                            <span class="material-symbols-outlined transition-transform group-hover/link:translate-x-1" data-icon="arrow_forward" style="">arrow_forward</span>
-</a>
-<a class="text-stone-400 hover:text-stone-900 transition-colors text-sm font-medium" href="#" style="">Demo Video</a>
-</div>
-</div>
-</section>
 </div>
 </main>
-<!-- Footer -->
+<!-- Footer Shell -->
 <footer class="w-full py-12 px-8 bg-[#f6f3f2]">
 <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 w-full">
 <div class="flex gap-8">
