@@ -1,0 +1,180 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-high": "#eae8e7",
+                        "on-surface-variant": "#5f5f5f",
+                        "surface-container": "#f0eded",
+                        "on-primary": "#dafffe",
+                        "on-secondary-fixed": "#3e4040",
+                        "surface-variant": "#e4e2e2",
+                        "on-primary-container": "#355757",
+                        "primary-fixed-dim": "#b7dbdb",
+                        "error-dim": "#4e0309",
+                        "on-background": "#323232",
+                        "on-primary-fixed": "#224545",
+                        "secondary-fixed": "#e2e2e2",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#2c4655",
+                        "on-secondary-container": "#505252",
+                        "on-error": "#fff7f6",
+                        "error-container": "#fe8983",
+                        "surface": "#fcf9f8",
+                        "on-primary-fixed-variant": "#3f6161",
+                        "surface-bright": "#fcf9f8",
+                        "on-secondary": "#f9f9f8",
+                        "surface-container-highest": "#e4e2e2",
+                        "secondary": "#5d5f5f",
+                        "tertiary-fixed": "#d0ecff",
+                        "secondary-dim": "#515353",
+                        "primary": "#426464",
+                        "on-tertiary-container": "#3e5868",
+                        "secondary-container": "#e2e2e2",
+                        "on-tertiary": "#f4faff",
+                        "on-error-container": "#752121",
+                        "error": "#9f403d",
+                        "outline": "#7b7a7a",
+                        "tertiary": "#486272",
+                        "tertiary-dim": "#3c5666",
+                        "secondary-fixed-dim": "#d4d4d4",
+                        "surface-container-low": "#f6f3f2",
+                        "tertiary-fixed-dim": "#c2def0",
+                        "on-tertiary-fixed-variant": "#486272",
+                        "primary-dim": "#365858",
+                        "on-secondary-fixed-variant": "#5a5c5c",
+                        "background": "#fcf9f8",
+                        "on-surface": "#323232",
+                        "primary-fixed": "#c5eae9",
+                        "inverse-primary": "#d8fefd",
+                        "surface-dim": "#dbdad9",
+                        "primary-container": "#c5eae9",
+                        "tertiary-container": "#d0ecff",
+                        "surface-tint": "#426464",
+                        "outline-variant": "#b3b2b1",
+                        "inverse-surface": "#0e0e0e",
+                        "inverse-on-surface": "#9e9c9c"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fcf9f8;
+            color: #323232;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary/20 selection:text-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f8]/80 backdrop-blur-xl">
+<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<a class="group flex items-center gap-2 font-headline font-bold text-sm tracking-tight uppercase text-[#0e0e0e]/60 hover:text-[#0e0e0e] transition-colors" href="/" style="">
+<span class="material-symbols-outlined text-base transition-transform group-hover:-translate-x-1" style="">arrow_back</span>
+                Back
+            </a>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+<!-- Split Layout Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
+<!-- Left Column: Visual/Identity -->
+<div class="lg:col-span-5 lg:sticky lg:top-32">
+<div class="aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden relative group">
+<img alt="Jack Good" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uirFg6Dw7urxsCAwlQyQ94Q6nMlHVlHfh4p6K2sxbKeg6x2crUWp-2JRB6zrrI5bKt2aEn7GtjqTauuRu2yG0csBjMDDaBiIZ99LMRD-NFnNTTQbE_MaQC_VgTq879sLJ42mEUG_qoadA9wj7SMSYVLM__KKIVMAzR5oBjy9lcxtshOOUfZOdCCCMFI2wpMQ7Ex3-toodQJ269BHmKXS6vhM0MTht6HL7rRxo2BLOWtroR3Oz1BOtBQj67S4Tgk7Q1KxFQblU2Wico" style="object-position: center 35%;">
+</div>
+</div>
+<!-- Right Column: Editorial Content -->
+<div class="lg:col-span-7">
+<header class="mb-16">
+<h1 class="font-headline font-extrabold text-7xl md:text-8xl tracking-tighter text-inverse-surface" style="">About</h1>
+</header>
+<section class="space-y-16">
+<!-- Bio -->
+<div class="max-w-2xl">
+<h2 class="font-label uppercase text-on-surface-variant mb-6 text-lg font-extrabold tracking-widest" style="">Bio</h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed text-lg">
+<p class="" style="">
+                                Currently completing my final year in Computer Science with specific interest in computer vision, machine learning systems, and robotics.</p>
+<p class="" style="">In my free time I enjoy playing tennis, fly fishing, golfing, and watching the Denver Broncos.&nbsp;Always interested in contributing to open source projects that improve accesibilty.</p>
+</div>
+</div>
+<!-- Education -->
+<div class="max-w-2xl">
+<h2 class="font-label uppercase text-on-surface-variant mb-6 text-lg font-extrabold tracking-widest" style="">Education</h2>
+<div class="space-y-4">
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-on-surface-variant/40 mt-1" style="font-size: 2rem;">school</span>
+<div>
+<h3 class="font-headline text-2xl font-bold text-inverse-surface" style="">M.S. Computer Science</h3>
+<p class="text-on-surface-variant font-medium" style="">TBD • 2026 — Present</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<img alt="Cornell University Logo" class="object-contain mt-1 w-12 h-12" src="https://lh3.googleusercontent.com/aida/ADBb0uhd6kzy1ldemgqoCON6pPrY-AlQMhzJLYSKzlx3bbueRBGR7ZcIoakIJsHD6rd6oToy0xRdxcexdvDiPQNwBYjyd9ml089o0AiTaK_1C7Mh_d2H-9IeIB9jQZq5hQCr8R7WdNa1d7TjkvVdtliXkdOhw4CqpEJK2fq6zeU7pVOLGDY_uOm_kvK8dnGtTKP-egbpq1v2aulK6wo01Vml497ElBSwQr08bhhvOvbfVGg4yr5K8sAGzQGJqBYe_GvQzqNLJ-Grzto9hMA" style="width: 48px; height: 48px;">
+<div>
+<h3 class="font-headline text-2xl font-bold text-inverse-surface" style="">B.A. Computer Science</h3>
+<p class="text-on-surface-variant font-medium" style="">Cornell University, 2022 — 2026</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Interests -->
+<div>
+<h2 class="font-label uppercase text-on-surface-variant mb-8 text-lg font-extrabold tracking-widest" style="">Interests</h2>
+<div class="flex flex-wrap gap-3">
+<span class="px-5 py-2 rounded-full bg-surface-container text-on-surface-variant text-sm font-label font-medium" style="">Machine Learning</span>
+<span class="px-5 py-2 rounded-full bg-surface-container text-on-surface-variant text-sm font-label font-medium" style="">Computer Vision</span>
+<span class="px-5 py-2 rounded-full bg-surface-container text-on-surface-variant text-sm font-label font-medium" style="">Robotics</span>
+<span class="px-5 py-2 rounded-full bg-surface-container text-on-surface-variant text-sm font-label font-medium" style="">Image Processing</span>
+</div>
+</div>
+<!-- Currently -->
+<div class="p-8 bg-surface-container-low rounded-xl">
+<h2 class="font-label uppercase text-primary mb-6 flex items-center gap-2 text-lg font-extrabold tracking-widest" style="">Currently</h2>
+<ul class="space-y-4 text-on-surface font-medium">
+<li class="flex items-start gap-4" style="">
+<span class="text-primary-dim opacity-50" style="">•</span>
+<span class="" style="">Working on graduating.</span>
+</li>
+<li class="flex items-start gap-4" style="">
+<span class="text-primary-dim opacity-50" style="">•</span>
+<span class="" style="">Developing some fun computer vision projects.</span>
+</li>
+<li class="flex items-start gap-4" style="">
+<span class="text-primary-dim opacity-50" style="">•</span>
+<span class="" style="">Reading "Algorithm Design" for the second time.</span>
+</li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 bg-[#f6f3f2]">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 w-full">
+<div class="flex gap-8">
+<a class="font-['Inter'] text-xs font-medium uppercase tracking-widest text-[#0e0e0e]/40 hover:text-[#426464] transition-colors duration-300 hover:underline decoration-2 underline-offset-4" href="#" style="">GitHub</a>
+<a class="font-['Inter'] text-xs font-medium uppercase tracking-widest text-[#0e0e0e]/40 hover:text-[#426464] transition-colors duration-300 hover:underline decoration-2 underline-offset-4" href="#" style="">LinkedIn</a>
+</div>
+<span class="font-['Inter'] text-xs font-medium uppercase tracking-widest text-[#0e0e0e]/40" style="">Please direct all complaints to: jacklianggood@gmail.com</span>
+</div>
+</footer>
+</body></html>
